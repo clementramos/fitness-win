@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
+import Link from 'next/link';
 
 export default function Hero() {
   return (
@@ -68,7 +69,7 @@ export default function Hero() {
           <p className="text-white text-7xl font-bold pt-20 pl-20 text-left">LIA</p>
           <p className="text-white text-7xl font-bold pt-20 pl-20 text-left">STEP</p>
           </div>
-          <p className="text-white text-5xl font-semibold pt-20 pr-20 text-right leading-normal">POUR PLUS D'INFORMATIONS, <p className="text-red-500"><a>CLIQUEZ-ICI</a></p> </p>
+          <p className="text-white text-5xl font-semibold pt-20 pr-20 text-right leading-normal">POUR PLUS D'INFORMATIONS, <p className="text-red-500"><Link href="/contact">CLIQUEZ-ICI</Link></p> </p>
         </div>  
     </div>
     <div className="overflow-x-hidden bg-white">

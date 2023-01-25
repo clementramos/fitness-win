@@ -101,7 +101,9 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
-
+.container {
+  font-family: 'Titillium Web', sans-serif;
+}
 a {
   color: inherit;
   text-decoration: none;

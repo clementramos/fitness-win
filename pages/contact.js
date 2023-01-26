@@ -22,7 +22,7 @@ const Contact = () => {
     };
     return (
         <><Navbar />
-        <div className="pt-48 h-full text-center text-3xl text-white">
+        <div className="pt-48 h-full text-center text-3xl text-white sm:pt-20 sm:px-4">
             <p className="text-2xl">
                 Merci de me laisser vos coordonnées, je vous recontacterais dès que possible.
             </p>

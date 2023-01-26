@@ -6,6 +6,24 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    screens: {
+      '2xl': {'max': '1535px'},
+      // => @media (max-width: 1535px) { ... }
+
+      'laptop': {'min': '1023px'},
+
+      'xl': {'max': '1279px'},
+      // => @media (max-width: 1279px) { ... }
+
+      'lg': {'max': '1023px'},
+      // => @media (max-width: 1023px) { ... }
+
+      'md': {'max': '767px'},
+      // => @media (max-width: 767px) { ... }
+
+      'sm': {'max': '639px'},
+      // => @media (max-width: 639px) { ... }
+    },
     backgroundImage: {
       'hero' : "url(../public/IMG-20180630-WA0009.png)",
       'level' : "url(../public/received_1295341857306354-removebg.png)",

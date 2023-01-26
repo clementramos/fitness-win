@@ -116,7 +116,7 @@ function classNames(...classes) {
       <div className="border-hidden">
         <div className="flex justify-between items-center border-hidden border-b-2 border-gray-100 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
-          <span className="inline-flex items-center text-3xl font-medium text-white hover:text-amber-300	"><a href="../#">FITNESS WIN</a></span>
+          <span className="sm:hidden inline-flex items-center text-3xl font-medium text-white hover:text-amber-300	"><a href="../#">FITNESS WIN</a></span>
           </div>
           <Popover.Group as="nav" className="xs:hidden">                
             <Popover className="relative">

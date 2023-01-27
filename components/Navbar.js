@@ -40,53 +40,53 @@ export default function Navbar() {
 const cours = [
   {
     name: 'Step',
-    href: 'cours',
+    href: '/construction',
   },
   {
     name: 'Lia',
-    href: 'cours',
+    href: '/construction',
   },
   { 
     name: 'Renforcement',  
-    href: 'cours', 
+    href: '/construction', 
   },
   {
     name: 'Danse',
-    href: 'cours',
+    href: '/construction',
   },
   {
     name: 'Pilâtes',
-    href: 'cours',
+    href: '/construction',
   },
   {
     name: 'Streching',
-    href: 'cours',
+    href: '/construction',
   },
 ]
 
 const formations = [
   {
     name: 'Step',
-    href: 'formations',
+    href: '/construction',
   },
   {
     name: 'Lia',
-    href: 'formations'
+    href: '/construction'
   },
 ]
 
 const parcours = [
   {
     name : 'Mon parcours',
-    href : 'parcours'
+    href : '/construction'
   },
   {
     name : 'Mes diplômes',
-    href : 'diplomes'
+    href : '/construction'
   },
   {
     name : 'Mes titres',
-    href : 'titres'
+    href : '/construction'
   }
 ]
 function classNames(...classes) {
@@ -279,10 +279,10 @@ function classNames(...classes) {
               )}
             </Popover>
           </Popover.Group>
-          <a href="#contact" className="inline-flex items-center text-1xl font-medium text-red-500 hover:text-amber-300	">
+          <a href="/contact" className="inline-flex items-center text-1xl font-medium text-red-500 hover:text-amber-300	">
                       COACHING PERSONNALISE
           </a>
-          <a href="" className="pl-5 inline-flex items-center text-1xl font-medium text-white hover:text-amber-300	">
+          <a href="/traduction" className="pl-5 inline-flex items-center text-1xl font-medium text-white hover:text-amber-300	">
                       FR / ENG
           </a>
         </div>

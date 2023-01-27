@@ -19,7 +19,7 @@ export default function Footer () {
                         <a href="/#" class="hover:underline">FITNESS WIN</a>
                     </li>
                     <li class="mb-4">
-                        <a href="" class="hover:underline">D'JO EDWARDS</a>
+                        <a href="/construction" class="hover:underline">D'JO EDWARDS</a>
                     </li>
                     <li>
                         <a href="/contact" class="hover:underline">CONTACT</a>

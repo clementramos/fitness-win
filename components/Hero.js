@@ -136,8 +136,8 @@ export default function Hero() {
         <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">PENSEZ-Y</span>
     </div>
     </div>
-    <div className="bg-black bg-no-repeat overflow-hidden h-screen w-screen pt-10">
-            <div className=" items-center justify-center w-full h-full py-24 sm:py-8 px-4">
+    <div className="bg-black bg-no-repeat overflow-hidden h-fit w-screen pt-10">
+            <div className=" items-center justify-center w-full h-fit py-24 sm:py-8 px-4">
                 {/* Carousel for desktop and large size devices */}
                 <CarouselProvider className="lg:block hidden" naturalSlideWidth={100} isIntrinsicHeight={true} totalSlides={12} visibleSlides={4} step={1} infinite={true}>
                     <div className="w-full relative flex items-center justify-center">
@@ -146,7 +146,7 @@ export default function Hero() {
                                 <path d="M7 1L1 7L7 13" stroke="white" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
                         </ButtonBack>
-                        <div className="w-full h-full mx-auto overflow-x-hidden overflow-y-hidden">
+                        <div className="w-full h- mx-auto overflow-x-hidden overflow-y-hidden">
                             <Slider>
                                 <div id="slider" className="h-full flex lg:gap-8 md:gap-6 gap-14 items-center justify-start transition ease-out duration-700">
                                     <Slide index={0}>
@@ -454,15 +454,15 @@ export default function Hero() {
                                 <path d="M7 1L1 7L7 13" stroke="white" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
                         </ButtonBack>
-                        <div className="w-full h-full mx-auto overflow-x-hidden overflow-y-hidden">
+                        <div className="w-full h-min mx-auto overflow-x-hidden overflow-y-hidden">
                             <Slider>
-                                <div id="slider" className="h-full w-full flex lg:gap-8 md:gap-6 items-center justify-start transition ease-out duration-700">
+                                <div id="slider" className="h-min w-full flex lg:gap-8 md:gap-6 items-center justify-start transition ease-out duration-700">
                                     <Slide index={0}>
                                         <div className="flex flex-shrink-0 relative w-full sm:w-auto">
                                             <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="black chair and white table" className="object-cover object-center w-full" />
                                             <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                                                 <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">texte</h2>
-                                                <div className="flex h-full items-end pb-6">
+                                                <div className="flex h-min items-end pb-6">
                                                     <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white"></h3>
                                                 </div>
                                             </div>

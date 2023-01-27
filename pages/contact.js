@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import { sendContactForm } from "services";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const Contact = () => {
     const [message, setMessage] = useState("");
@@ -81,7 +82,8 @@ const Contact = () => {
                     </button>
                 </form>
             </div>
-        </div></>
+        </div>
+        <Footer/></>
     );
 };
 

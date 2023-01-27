@@ -92,15 +92,7 @@ body {
   font-family: 'Titillium Web', sans-serif;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+
 .container {
   font-family: 'Titillium Web', sans-serif;
 }

@@ -40,8 +40,8 @@ const Contact = () => {
                     onSubmit={submitForm}
                 >
                 <div>
-                    <label for="name" class="text-left block mb-2 text-sm font-medium text-gray-900 text-gray-300">Votre prénom</label>
-                    <input className="shadow-sm bg-gray-700 border border-gray-600 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500 shadow-sm-light"
+                    <label for="name" class="text-left block mb-2 text-sm font-medium text-gray-900">Votre prénom</label>
+                    <input className="shadow-sm text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500 shadow-sm-light"
                         required
                         placeholder="Prénom*"
                         type={"text"}
@@ -50,8 +50,8 @@ const Contact = () => {
                 </div>
                   
                 <div>
-                    <label for="lastname" class="text-left block mb-2 text-sm font-medium text-gray-900 text-gray-300">Votre nom</label>
-                    <input className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500 shadow-sm-light"
+                    <label for="lastname" class="text-left block mb-2 text-sm font-medium text-gray-900">Votre nom</label>
+                    <input className="shadow-sm text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500 shadow-sm-light"
                         required
                         placeholder="Nom*"
                         type={"text"}
@@ -60,16 +60,16 @@ const Contact = () => {
                 </div>
 
                 <div>
-                    <label for="mail" class="text-left block mb-2 text-sm font-medium text-gray-900 text-gray-300">Votre mail</label>
-                    <input className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500 shadow-sm-light"
+                    <label for="mail" class="text-left block mb-2 text-sm font-medium text-gray-900">Votre mail</label>
+                    <input className="shadow-sm text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500 shadow-sm-light"
                         required
                         placeholder="Mail*"
                         type={"mail"} />
                 </div>
 
                 <div>
-                    <label for="phone" class="text-left block mb-2 text-sm font-medium text-gray-900 text-gray-300">Votre téléphone</label>
-                    <input className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500 shadow-sm-light"
+                    <label for="phone" class="text-left block mb-2 text-sm font-medium text-gray-900">Votre téléphone</label>
+                    <input className="shadow-sm text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500 shadow-sm-light"
                         required
                         placeholder="Téléphone*"
                         type={"tel"}

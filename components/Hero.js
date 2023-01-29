@@ -9,7 +9,7 @@ export default function Hero() {
     <div className="flex flex-row justify-end items-start bg-black bg-no-repeat overflow-hidden h-screen w-screen pt-48 sm:pt-24 xs:inline-block xs:bg-black sm:w-full sm:h-full sm:overflow-hidden">
         <div className=" laptop: hidden w-1/2 h-full bg-no-repeat bg-hero md:text-center sm:w-full xs:p-5 z-9999">
         </div>
-            <div className="xl:w-1/2 md:text-center sm:w-full sm:p-5">
+            <div className="xl:w-1/2 md:text-center sm:w-full sm:p-5 h-screen">
               <p className="text-white text-left text-8xl sm:text-5xl sm:w-full sm:pb-5 sm:text-left font-bold pb-16">FITNESS WIN</p>
               <p className="text-white text-left text-5xl sm:text-3xl font-semibold pb-4">FAISONS DU SPORT ENSEMBLE</p>
               <p className="text-white text-left text-4xl sm:text-2xl pb-5 pr-5">Je vous propose différents cours de sports de premiers pas à expert. </p>
@@ -33,7 +33,7 @@ export default function Hero() {
         <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">VOTRE NIVEAU</span>
     </div>
     </div>
-    <div className="flex flex-row justify-end items-start bg-black bg-no-repeat overflow-hidden h-screen w-screen pt-48 sm:pt-5 sm:inline-block xs:bg-hero sm:h-full xs:w-full ">
+    <div className="flex flex-row justify-end items-start bg-black bg-no-repeat overflow-hidden h-screen w-screen pt-48 sm:pt-5 sm:inline-block xs:bg-hero  xs:w-full ">
         <div className="grid grid-cols-3 w-full h-full bg-no-repeat bg-level md:text-center xs:w-full xs:p-5 z-9999">
           <div className="col-span-2">
           <p className="text-white text-8xl font-bold text-left pl-5 sm:text-5xl sm:w-full">CHOISISSEZ VOTRE <br></br> 
@@ -44,7 +44,7 @@ export default function Hero() {
           <p className="sm:hidden text-white text-6xl font-semibold text-center leading-relaxed sm:w-full">PREMIERS PAS <br></br> DEBUTANT<br></br> INTERMEDIAIRE <br></br> CONFIRME <br></br> EXPERT</p>
         </div>  
     </div>
-    <div className="overflow-x-hidden bg-white">
+    <div className="overflow-x-hidden bg-white" id="#cours">
     <div className="animate-marquee whitespace-nowrap">
         <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">LES COURS DISPONIBLES</span>
         <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">LES COURS DISPONIBLES</span>
@@ -60,7 +60,7 @@ export default function Hero() {
         <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">LES COURS DISPONIBLES</span>
     </div>
     </div>
-    <div className="flex flex-row justify-end items-start bg-black bg-no-repeat overflow-hidden h-screen w-screen pt-10 sm:pt-5 sm:inline-block xs:bg-hero sm:h-full xs:w-full ">
+    <div className="flex flex-row justify-end items-start bg-black bg-no-repeat overflow-hidden h-screen w-screen pt-10 sm:pt-5 sm:inline-block xs:bg-hero sm:h-full xs:w-full sm:h-screen">
         <div className="grid grid-cols-3 w-full h-full bg-no-repeat bg-programm md:text-center xs:w-full xs:p-5 z-9999">
           <div className="col-span-2">
           <p className="laptop:hidden text-white font-bold text-left sm:text-5xl sm:pl-5 sm:pt-0">LES COURS DISPONIBLES</p>
@@ -70,8 +70,8 @@ export default function Hero() {
           <p className="text-white text-7xl font-bold pt-20 pl-20 text-left sm:text-3xl sm:pl-5 sm:pt-5">DANCE</p>
           <p className="text-white text-7xl font-bold pt-20 pl-20 text-left sm:text-3xl sm:pl-5 sm:pt-5">LIA</p>
           <p className="text-white text-7xl font-bold pt-20 pl-20 text-left sm:text-3xl sm:pl-5 sm:pt-5">STEP</p>
-          <p className="laptop:hidden text-white text-5xl font-semibold text-left sm:text-3xl sm:pl-5 sm:pt-5">POUR PLUS D'INFORMATIONS,</p>
-          <Link href="/contact" className="laptop:hidden text-red-500 sm:text-3xl sm:text-left sm:pt-5">CLIQUEZ-ICI</Link>
+          <p className="laptop:hidden text-white text-5xl font-semibold text-left sm:text-3xl sm:pl-5 sm:pt-20">POUR PLUS D'INFORMATIONS,</p>
+          <Link href="/contact" className="laptop:hidden text-red-500 sm:text-3xl sm:text-left sm:pt-10">CLIQUEZ-ICI</Link>
           </div>
           <p className="sm:hidden text-white text-5xl font-semibold pt-20 pr-20 text-right leading-normal">POUR PLUS D'INFORMATIONS, <p className="text-red-500"><Link href="/contact">CLIQUEZ-ICI</Link></p> </p>
         </div>  
@@ -151,7 +151,7 @@ export default function Hero() {
                                 <div id="slider" className="h-full flex lg:gap-8 md:gap-6 gap-14 items-center justify-start transition ease-out duration-700">
                                     <Slide index={0}>
                                         <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                            <img src="https://i.ibb.co/xY21nbx/style-sportif-a-la-ville-homme.jpg" alt="black chair and white table" className="object-cover object-center w-full" />
+                                            <img src="20180529_104437.jpg" alt="black chair and white table" className="object-cover object-center w-full" />
                                             <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                                                 <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">texte</h2>
                                                 <div className="flex h-full items-end pb-6">
@@ -162,7 +162,7 @@ export default function Hero() {
                                     </Slide>
                                     <Slide index={1}>
                                         <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                            <img src="https://i.ibb.co/7jHdrrG/lieux-coach-sportif.jpg" alt="sitting area" className="object-cover object-center w-full" />
+                                            <img src="20181021_193712.jpg" alt="sitting area" className="object-cover object-center w-full" />
                                             <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                                                 <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">texte</h2>
                                                 <div className="flex h-full items-end pb-6">
@@ -173,7 +173,7 @@ export default function Hero() {
                                     </Slide>
                                     <Slide index={2}>
                                         <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                            <img src="https://i.ibb.co/hmkKbKv/jeunes-sportifs-s-entrainant-dans-salle-sport-matin-1157-28954.webp" alt="sitting area" className="object-cover object-center w-full" />
+                                            <img src="53926419_2197309237012076_9103242218197483520_n.jpg" alt="sitting area" className="object-cover object-center w-full" />
                                             <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                                                 <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">texte</h2>
                                                 <div className="flex h-full items-end pb-6">
@@ -184,7 +184,7 @@ export default function Hero() {
                                     </Slide>
                                     <Slide index={3}>
                                         <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                            <img src="https://i.ibb.co/dbP9qQy/coach-sportif.jpg" alt="sitting area" className="object-cover object-center w-full" />
+                                            <img src="20180529_104437.jpg" alt="sitting area" className="object-cover object-center w-full" />
                                             <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                                                 <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">texte</h2>
                                                 <div className="flex h-full items-end pb-6">
@@ -195,7 +195,7 @@ export default function Hero() {
                                     </Slide>
                                     <Slide index={4}>
                                         <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                            <img src="https://i.ibb.co/xY21nbx/style-sportif-a-la-ville-homme.jpg" alt="black chair and white table" className="object-cover object-center w-full" />
+                                            <img src="20181021_193712.jpg" alt="black chair and white table" className="object-cover object-center w-full" />
                                             <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                                                 <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">texte</h2>
                                                 <div className="flex h-full items-end pb-6">
@@ -206,7 +206,7 @@ export default function Hero() {
                                     </Slide>
                                     <Slide index={5}>
                                         <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                            <img src="https://i.ibb.co/7jHdrrG/lieux-coach-sportif.jpg" alt="sitting area" className="object-cover object-center w-full" />
+                                            <img src="53926419_2197309237012076_9103242218197483520_n.jpg" alt="sitting area" className="object-cover object-center w-full" />
                                             <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                                                 <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">texte</h2>
                                                 <div className="flex h-full items-end pb-6">
@@ -217,7 +217,7 @@ export default function Hero() {
                                     </Slide>
                                     <Slide index={6}>
                                         <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                            <img src="https://i.ibb.co/hmkKbKv/jeunes-sportifs-s-entrainant-dans-salle-sport-matin-1157-28954.webp" alt="sitting area" className="object-cover object-center w-full" />
+                                            <img src="1665925475297.jpg" alt="sitting area" className="object-cover object-center w-full" />
                                             <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                                                 <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">texte</h2>
                                                 <div className="flex h-full items-end pb-6">
@@ -228,7 +228,7 @@ export default function Hero() {
                                     </Slide>
                                     <Slide index={7}>
                                         <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                            <img src="https://i.ibb.co/dbP9qQy/coach-sportif.jpg" alt="sitting area" className="object-cover object-center w-full" />
+                                            <img src="20180529_104437.jpg" alt="sitting area" className="object-cover object-center w-full" />
                                             <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                                                 <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">texte</h2>
                                                 <div className="flex h-full items-end pb-6">
@@ -239,7 +239,7 @@ export default function Hero() {
                                     </Slide>
                                     <Slide index={8}>
                                         <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                            <img src="https://i.ibb.co/xY21nbx/style-sportif-a-la-ville-homme.jpg" alt="black chair and white table" className="object-cover object-center w-full" />
+                                            <img src="20181021_193712.jpg" alt="black chair and white table" className="object-cover object-center w-full" />
                                             <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                                                 <h2 className="texlg:t-xl le leading-4 text-basealg:ding-tight text-white">texte</h2>
                                                 <div className="flex h-full items-end pb-6">
@@ -250,7 +250,7 @@ export default function Hero() {
                                     </Slide>
                                     <Slide index={9}>
                                         <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                            <img src="https://i.ibb.co/7jHdrrG/lieux-coach-sportif.jpg" alt="sitting area" className="object-cover object-center w-full" />
+                                            <img src="53926419_2197309237012076_9103242218197483520_n.jpg" alt="sitting area" className="object-cover object-center w-full" />
                                             <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                                                 <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">texte</h2>
                                                 <div className="flex h-full items-end pb-6">
@@ -261,7 +261,7 @@ export default function Hero() {
                                     </Slide>
                                     <Slide index={10}>
                                         <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                            <img src="https://i.ibb.co/hmkKbKv/jeunes-sportifs-s-entrainant-dans-salle-sport-matin-1157-28954.webp" alt="sitting area" className="object-cover object-center w-full" />
+                                            <img src="1665925475297.jpg" alt="sitting area" className="object-cover object-center w-full" />
                                             <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                                                 <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">texte</h2>
                                                 <div className="flex h-full items-end pb-6">
@@ -272,7 +272,7 @@ export default function Hero() {
                                     </Slide>
                                     <Slide index={11}>
                                         <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                            <img src="https://i.ibb.co/dbP9qQy/coach-sportif.jpg" alt="sitting area" className="object-cover object-center w-full" />
+                                            <img src="20180529_104437.jpg" alt="sitting area" className="object-cover object-center w-full" />
                                             <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                                                 <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">texte</h2>
                                                 <div className="flex h-full items-end pb-6">
@@ -305,7 +305,7 @@ export default function Hero() {
                                 <div id="slider" className="h-full flex lg:gap-8 md:gap-6 gap-14 items-center justify-start transition ease-out duration-700">
                                     <Slide index={0}>
                                         <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                            <img src="https://i.ibb.co/xY21nbx/style-sportif-a-la-ville-homme.jpg" alt="black chair and white table" className="object-cover object-center w-full" />
+                                            <img src="20181021_193712.jpg" alt="black chair and white table" className="object-cover object-center w-full" />
                                             <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                                                 <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">texte</h2>
                                                 <div className="flex h-full items-end pb-6">
@@ -316,7 +316,7 @@ export default function Hero() {
                                     </Slide>
                                     <Slide index={1}>
                                         <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                            <img src="https://i.ibb.co/JBj5P2V/stress-performance.jpg" alt="sitting area" className="object-cover object-center w-full" />
+                                            <img src="1665925475316.jpg" alt="sitting area" className="object-cover object-center w-full" />
                                             <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                                                 <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">texte</h2>
                                                 <div className="flex h-full items-end pb-6">
@@ -327,7 +327,7 @@ export default function Hero() {
                                     </Slide>
                                     <Slide index={2}>
                                         <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                            <img src="https://i.ibb.co/hmkKbKv/jeunes-sportifs-s-entrainant-dans-salle-sport-matin-1157-28954.webp" alt="sitting area" className="object-cover object-center w-full" />
+                                            <img src="1665925475297.jpg" alt="sitting area" className="object-cover object-center w-full" />
                                             <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                                                 <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">texte</h2>
                                                 <div className="flex h-full items-end pb-6">
@@ -338,7 +338,7 @@ export default function Hero() {
                                     </Slide>
                                     <Slide index={3}>
                                         <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                            <img src="https://i.ibb.co/rFsGfr5/carosel-4.png" alt="sitting area" className="object-cover object-center w-full" />
+                                            <img src="1665925475380.jpg" alt="sitting area" className="object-cover object-center w-full" />
                                             <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                                                 <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">texte</h2>
                                                 <div className="flex h-full items-end pb-6">
@@ -349,7 +349,7 @@ export default function Hero() {
                                     </Slide>
                                     <Slide index={4}>
                                         <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                            <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="black chair and white table" className="object-cover object-center w-full" />
+                                            <img src="FB_IMG_1527543838583.jpg" alt="black chair and white table" className="object-cover object-center w-full" />
                                             <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                                                 <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">texte</h2>
                                                 <div className="flex h-full items-end pb-6">
@@ -360,7 +360,7 @@ export default function Hero() {
                                     </Slide>
                                     <Slide index={5}>
                                         <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                            <img src="https://i.ibb.co/JBj5P2V/stress-performance.jpg" alt="sitting area" className="object-cover object-center w-full" />
+                                            <img src="1665925475316.jpg" alt="sitting area" className="object-cover object-center w-full" />
                                             <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                                                 <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">texte</h2>
                                                 <div className="flex h-full items-end pb-6">
@@ -371,7 +371,7 @@ export default function Hero() {
                                     </Slide>
                                     <Slide index={6}>
                                         <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                            <img src="https://i.ibb.co/hmkKbKv/jeunes-sportifs-s-entrainant-dans-salle-sport-matin-1157-28954.webp" alt="sitting area" className="object-cover object-center w-full" />
+                                            <img src="1665925475297.jpg" alt="sitting area" className="object-cover object-center w-full" />
                                             <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                                                 <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">texte</h2>
                                                 <div className="flex h-full items-end pb-6">
@@ -382,7 +382,7 @@ export default function Hero() {
                                     </Slide>
                                     <Slide index={7}>
                                         <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                            <img src="https://i.ibb.co/rFsGfr5/carosel-4.png" alt="sitting area" className="object-cover object-center w-full" />
+                                            <img src="1665925475380.jpg" alt="sitting area" className="object-cover object-center w-full" />
                                             <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                                                 <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">texte</h2>
                                                 <div className="flex h-full items-end pb-6">
@@ -393,7 +393,7 @@ export default function Hero() {
                                     </Slide>
                                     <Slide index={8}>
                                         <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                            <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="black chair and white table" className="object-cover object-center w-full" />
+                                            <img src="FB_IMG_1527543838583.jpg" alt="black chair and white table" className="object-cover object-center w-full" />
                                             <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                                                 <h2 className="texlg:t-xl le leading-4 text-basealg:ding-tight text-white">texte</h2>
                                                 <div className="flex h-full items-end pb-6">
@@ -404,7 +404,7 @@ export default function Hero() {
                                     </Slide>
                                     <Slide index={9}>
                                         <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                            <img src="https://i.ibb.co/JBj5P2V/stress-performance.jpg" alt="sitting area" className="object-cover object-center w-full" />
+                                            <img src="1665925475316.jpg" alt="sitting area" className="object-cover object-center w-full" />
                                             <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                                                 <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">texte</h2>
                                                 <div className="flex h-full items-end pb-6">
@@ -415,7 +415,7 @@ export default function Hero() {
                                     </Slide>
                                     <Slide index={10}>
                                         <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                            <img src="https://i.ibb.co/hmkKbKv/jeunes-sportifs-s-entrainant-dans-salle-sport-matin-1157-28954.webp" alt="sitting area" className="object-cover object-center w-full" />
+                                            <img src="1665925475297.jpg" alt="sitting area" className="object-cover object-center w-full" />
                                             <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                                                 <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">texte</h2>
                                                 <div className="flex h-full items-end pb-6">
@@ -459,7 +459,7 @@ export default function Hero() {
                                 <div id="slider" className="h-min w-full flex lg:gap-8 md:gap-6 items-center justify-start transition ease-out duration-700">
                                     <Slide index={0}>
                                         <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                            <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="black chair and white table" className="object-cover object-center w-full" />
+                                            <img src="FB_IMG_1527543838583.jpg" alt="black chair and white table" className="object-cover object-center w-full" />
                                             <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                                                 <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">texte</h2>
                                                 <div className="flex h-min items-end pb-6">
@@ -470,7 +470,7 @@ export default function Hero() {
                                     </Slide>
                                     <Slide index={1}>
                                         <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                            <img src="https://i.ibb.co/JBj5P2V/stress-performance.jpg" alt="sitting area" className="object-cover object-center w-full" />
+                                            <img src="1665925475316.jpg" alt="sitting area" className="object-cover object-center w-full" />
                                             <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                                                 <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white"></h2>
                                                 <div className="flex h-full items-end pb-6">
@@ -503,7 +503,7 @@ export default function Hero() {
                                     </Slide>
                                     <Slide index={4}>
                                         <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                            <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="black chair and white table" className="object-cover object-center w-full" />
+                                            <img src="FB_IMG_1527543838583.jpg" alt="black chair and white table" className="object-cover object-center w-full" />
                                             <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                                                 <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white"></h2>
                                                 <div className="flex h-full items-end pb-6">

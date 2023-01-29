@@ -6,7 +6,7 @@ export default function Footer () {
         <footer class="p-4 bg-black sm:p-6 ">
     <div class="sm:grid sm:justify-between">
         <div class="mb-6 sm:mb-0">
-            <a href="https://fitnesswin.com/" class="flex items-center">
+            <a href="#" class="flex items-center">
                 <img src="https://i.ibb.co/cbQfXN0/LOGO-DARK.png" class="h-36 mr-3" alt="fitnesswin Logo" />
                 <span class="self-center text-5xl text-white font-semibold whitespace-nowrap sm:text-3xl">FITNESS WIN</span>
             </a>
@@ -30,10 +30,10 @@ export default function Footer () {
                 <h2 class="mb-6 text-2xl font-semibold text-gray-100 uppercase dark:text-white">suivez-moi</h2>
                 <ul class="text-white dark:text-gray-400">
                     <li class="mb-4">
-                        <a href="" class="hover:underline ">FACEBOOK</a>
+                        <a href="#" class="hover:underline ">FACEBOOK</a>
                     </li>
                     <li>
-                        <a href="" class="hover:underline">TWITTER</a>
+                        <a href="#" class="hover:underline">TWITTER</a>
                     </li>
                 </ul>
             </div>
@@ -41,10 +41,10 @@ export default function Footer () {
                 <h2 class="mb-6 text-2xl font-semibold text-gray-100 uppercase dark:text-white">Legal</h2>
                 <ul class="text-white dark:text-gray-400">
                     <li class="mb-4">
-                        <a href="#" class="hover:underline">PRIVACY POLICY</a>
+                        <a href="/construction" class="hover:underline">PRIVACY POLICY</a>
                     </li>
                     <li>
-                        <a href="#" class="hover:underline">TERMS &amp; CONDITIONS</a>
+                        <a href="/construction" class="hover:underline">TERMS &amp; CONDITIONS</a>
                     </li>
                 </ul>
             </div>

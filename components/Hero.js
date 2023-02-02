@@ -1,11 +1,44 @@
-import React, { useState } from "react";
+import React from "react";
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 import Link from 'next/link';
+import { motion, AnimatePresence } from 'framer-motion';
+import { useRouter } from 'next/router';
+
+const variants = {
+    out: {
+      opacity: 0,
+      y: 40,
+      transition: {
+        duration: 0.75
+      }
+    },
+    in: {
+        opacity: 1,
+        y: 0,
+        transition: {
+          duration: 0.75,
+          delay: 0.5
+        }
+      }
+  };
+
 
 export default function Hero() {
+    const { asPath } = useRouter();
   return (
     <>
+    <AnimatePresence
+	      initial={false}
+	      exitBeforeEnter
+	    >
+    <motion.div
+    key={asPath}
+    variants={variants}
+    animate="in"
+    initial="out"
+    exit="out"
+    >
     <div className="flex flex-row justify-end items-start bg-black bg-no-repeat overflow-hidden h-screen w-screen pt-48 sm:pt-24 xs:inline-block xs:bg-black sm:w-full sm:h-full sm:overflow-hidden">
         <div className=" laptop: hidden w-1/2 h-full bg-no-repeat bg-hero md:text-center sm:w-full xs:p-5 z-9999">
         </div>
@@ -524,7 +557,9 @@ export default function Hero() {
                     </div>
                 </CarouselProvider>
             </div>
-    </div>   
+    </div>  
+    </motion.div> 
+    </AnimatePresence>
     </>
   );
 }

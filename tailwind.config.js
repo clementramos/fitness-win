@@ -28,7 +28,8 @@ module.exports = {
       // => @media (max-width: 639px) { ... }
     },
     backgroundImage: {
-      'hero' : "url(../public/IMG-20180630-WA0009.png)",
+      'hero' : "url(../public/311589413_641559444110696_8741248957289991299_n.jpg)",
+      'hero1' : "url(../public/68663104_2520013301408333_215679822947418112_n.jpg)",
       'level' : "url(../public/received_1295341857306354-removebg.png)",
       'programm' : "url(../public/FB_IMG_1528984283679-transformed.png)",
       'prices' : "url(../public/a8ed74ae-264b-4f32-8a6d-ebc32f07a27d-transformed.png)",

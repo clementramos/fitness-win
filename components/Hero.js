@@ -39,15 +39,20 @@ export default function Hero() {
     initial="out"
     exit="out"
     >
-    <div className="flex flex-row justify-end items-start bg-black bg-no-repeat overflow-hidden h-screen w-screen pt-48 sm:pt-24 xs:inline-block xs:bg-black sm:w-full sm:h-full sm:overflow-hidden">
-        <div className=" laptop: hidden w-1/2 h-full bg-no-repeat bg-hero md:text-center sm:w-full xs:p-5 z-9999">
+    <div className="items-start bg-hero1 bg-no-repeat overflow-hidden h-screen w-screen pt-56 sm:pt-24 xs:inline-block xs:bg-black sm:w-full sm:h-full sm:overflow-hidden">
+        <div className="laptop: hidden h-full bg-no-repeat bg-hero md:text-center sm:w-full xs:p-5 z-9999">
         </div>
-            <div className="xl:w-1/2 md:text-center sm:w-full sm:p-5 h-screen">
-              <p className="text-white text-left text-8xl sm:text-5xl sm:w-full sm:pb-5 sm:text-left font-bold pb-16">FITNESS WIN</p>
-              <p className="text-white text-left text-5xl sm:text-3xl font-semibold pb-4">FAISONS DU SPORT ENSEMBLE</p>
-              <p className="text-white text-left text-4xl sm:text-2xl pb-5 pr-5">Je vous propose différents cours de sports de premiers pas à expert. </p>
-              <p className="text-white text-left text-4xl sm:text-2xl pb-5 pr-5">Des cours adaptées à tous (Freestyle, de Danse, Renforcement, Stretching, Pilâtes ...).</p>
-              <p className="text-white text-left text-4xl sm:text-2xl pb-5 pr-5">Les cours proposés vous permettront de progresser à votre rythme. L’idée étant de faire du sport en s’amusant afin garder la forme.</p>
+            <div className="text-center sm:w-full sm:p-5 h-screen">
+              <p className="text-white text-center text-[12rem] sm:text-5xl sm:w-full sm:pb-5 sm:text-center font-[800] tracking-tighter">FITNESS WIN</p>
+              <p className="text-white text-center text-4xl sm:text-3xl font-light pb-4">FAISONS DU SPORT ENSEMBLE</p>
+              <button class="bg-transparent hover:bg-white text-white font-semibold hover:text-black py-2 px-4 border border-white hover:border-transparent rounded-none">
+                <a href="/contact">COMMENCEZ L'ESSAI DE 7 JOURS</a>
+              </button>
+              <p className="text-white text-center text-xl sm:text-2xl pb-5 pt-5 pr-5">Je vous propose différents cours de sports de premiers pas à expert. 
+              {/*<img src="/youtube.png" alt="youtube channel" className="h-24"></img>*/}
+              </p>
+              {/*<p className="text-white text-center text-4xl sm:text-2xl pb-5 pr-5">Des cours adaptées à tous (Freestyle, de Danse, Renforcement, Stretching, Pilâtes ...).</p>
+              <p className="text-white text-center text-4xl sm:text-2xl pb-5 pr-5">Les cours proposés vous permettront de progresser à votre rythme. L’idée étant de faire du sport en s’amusant afin garder la forme.</p>*/}
             </div>
     </div>
     <div className="overflow-x-hidden bg-white">

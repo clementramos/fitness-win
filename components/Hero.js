@@ -4,6 +4,7 @@ import "pure-react-carousel/dist/react-carousel.es.css";
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useRouter } from 'next/router';
+import Image from 'next/image';
 
 const variants = {
     out: {
@@ -39,7 +40,7 @@ export default function Hero() {
     initial="out"
     exit="out"
     >
-    <div className="items-start bg-hero1 bg-no-repeat overflow-hidden h-screen w-screen pt-56 sm:pt-24 xs:inline-block xs:bg-black sm:w-full sm:h-full sm:overflow-hidden">
+    <div className="items-start bg-hero1 bg-cover overflow-hidden h-screen w-screen pt-56 sm:pt-24 xs:inline-block xs:bg-black sm:w-full sm:h-full sm:overflow-hidden">
         <div className="laptop: hidden h-full bg-no-repeat bg-hero md:text-center sm:w-full xs:p-5 z-9999">
         </div>
             <div className="text-center sm:w-full sm:p-5 h-screen">
@@ -55,96 +56,138 @@ export default function Hero() {
               <p className="text-white text-center text-4xl sm:text-2xl pb-5 pr-5">Les cours proposés vous permettront de progresser à votre rythme. L’idée étant de faire du sport en s’amusant afin garder la forme.</p>*/}
             </div>
     </div>
-    <div className="overflow-x-hidden bg-white">
-    <div className="animate-marquee whitespace-nowrap">
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">VOTRE NIVEAU</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">VOTRE NIVEAU</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">VOTRE NIVEAU</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">VOTRE NIVEAU</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">VOTRE NIVEAU</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">VOTRE NIVEAU</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">VOTRE NIVEAU</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">VOTRE NIVEAU</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">VOTRE NIVEAU</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">VOTRE NIVEAU</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">VOTRE NIVEAU</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">VOTRE NIVEAU</span>
-    </div>
-    </div>
-    <div className="flex flex-row justify-end items-start bg-black bg-no-repeat overflow-hidden h-screen w-screen pt-48 sm:pt-5 sm:inline-block xs:bg-hero  xs:w-full ">
-        <div className="grid grid-cols-3 w-full h-full bg-no-repeat bg-level md:text-center xs:w-full xs:p-5 z-9999">
-          <div className="col-span-2">
-          <p className="text-white text-8xl font-bold text-left pl-5 sm:text-5xl sm:w-full">CHOISISSEZ VOTRE <br></br> 
-          <p className="w-1/2 text-white text-8xl font-bold sm:text-5xl sm:w-full"> NIVEAU</p></p>
-          <p className="w-1/2 text-white text-5xl font-semibold pt-5 pl-5 text-left leading-normal sm:text-3xl sm:w-full">Progressez à votre rythme <br></br>avec les différents niveaux</p>
-          <p className="laptop:hidden text-white text-3xl pt-5 font-semibold text-center leading-relaxed sm:text-left sm:pl-5 sm:w-full">PREMIERS PAS <br></br> DEBUTANT<br></br> INTERMEDIAIRE <br></br> CONFIRME <br></br> EXPERT</p>
-          </div>
-          <p className="sm:hidden text-white text-6xl font-semibold text-center leading-relaxed sm:w-full">PREMIERS PAS <br></br> DEBUTANT<br></br> INTERMEDIAIRE <br></br> CONFIRME <br></br> EXPERT</p>
-        </div>  
-    </div>
-    <div className="overflow-x-hidden bg-white" id="#cours">
-    <div className="animate-marquee whitespace-nowrap">
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">LES COURS DISPONIBLES</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">LES COURS DISPONIBLES</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">LES COURS DISPONIBLES</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">LES COURS DISPONIBLES</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">LES COURS DISPONIBLES</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">LES COURS DISPONIBLES</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">LES COURS DISPONIBLES</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">LES COURS DISPONIBLES</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">LES COURS DISPONIBLES</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">LES COURS DISPONIBLES</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">LES COURS DISPONIBLES</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">LES COURS DISPONIBLES</span>
-    </div>
-    </div>
-    <div className="flex flex-row justify-end items-start bg-black bg-no-repeat overflow-hidden h-screen w-screen pt-10 sm:pt-5 sm:inline-block xs:bg-hero sm:h-full xs:w-full sm:h-screen">
-        <div className="grid grid-cols-3 w-full h-full bg-no-repeat bg-programm md:text-center xs:w-full xs:p-5 z-9999">
-          <div className="col-span-2">
-          <p className="laptop:hidden text-white font-bold text-left sm:text-5xl sm:pl-5 sm:pt-0">LES COURS DISPONIBLES</p>
-          <p className="text-white text-7xl font-bold text-left pt-20 pl-20 sm:text-3xl sm:pl-5 sm:pt-5">RENFORCEMENT</p>
-          <p className="text-white text-7xl font-bold pt-20 pl-20 text-left sm:text-3xl sm:pl-5 sm:pt-5">PILATES</p>
-          <p className="text-white text-7xl font-bold pt-20 pl-20 text-left sm:text-3xl sm:pl-5 sm:pt-5">STRETCHING</p>
-          <p className="text-white text-7xl font-bold pt-20 pl-20 text-left sm:text-3xl sm:pl-5 sm:pt-5">DANCE</p>
-          <p className="text-white text-7xl font-bold pt-20 pl-20 text-left sm:text-3xl sm:pl-5 sm:pt-5">LIA</p>
-          <p className="text-white text-7xl font-bold pt-20 pl-20 text-left sm:text-3xl sm:pl-5 sm:pt-5">STEP</p>
-          <p className="laptop:hidden text-white text-5xl font-semibold text-left sm:text-3xl sm:pl-5 sm:pt-20">POUR PLUS D'INFORMATIONS,</p>
-          <Link href="/contact" className="laptop:hidden text-red-500 sm:text-3xl sm:text-left sm:pt-10">CLIQUEZ-ICI</Link>
-          </div>
-          <p className="sm:hidden text-white text-5xl font-semibold pt-20 pr-20 text-right leading-normal">POUR PLUS D'INFORMATIONS, <p className="text-red-500"><Link href="/contact">CLIQUEZ-ICI</Link></p> </p>
-        </div>  
-    </div>
-    <div className="overflow-x-hidden bg-white">
-    <div className="animate-marquee whitespace-nowrap">
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">TARIFS</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">TARIFS</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">TARIFS</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">TARIFS</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">TARIFS</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">TARIFS</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">TARIFS</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">TARIFS</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">TARIFS</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">TARIFS</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">TARIFS</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">TARIFS</span>
-    </div>
-    </div>
-    <div className=" bg-black bg-no-repeat overflow-hidden h-screen w-screen pt-10 xs:pt-48 xs:inline-block xs:bg-hero xs:w-full sm:pt-0 sm:h-full">
-      <p className="text-white text-center text-8xl font-bold pt-10 pb-20 sm:text-5xl sm:pl-5 sm:pt-5 sm:pb-0 sm:text-left">7 PREMIERS JOURS GRATUITS</p>
-      <div className="grid grid-cols-2 gap-20 p-20 sm:inline-block sm:h-full sm:p-10 sm:grid sm:grid-cols-1 sm:gap-10">
-        <button className="bg-gray-300 hover:bg-gray-100 text-gray-800 font-bold text-6xl py-36 px-4 border border-gray-400 rounded shadow sm:py-5 sm:text-xl sm:w-full">
-          <a href="#contact">
-          19.99 € / MOIS <br></br>     
-          300 € A L'ANNEE
-          </a>
+    <div className="text-center bg-white bg-cover overflow-hidden h-full w-screen pt-12 sm:pt-24 xs:inline-block xs:bg-black sm:w-full sm:h-full sm:overflow-hidden">
+        <Image 
+        src="/PROGRAMMES VIDEOS.png"
+        alt="programme"
+        width={1200}
+        height={687}
+        className="mx-auto sm:px-5"
+        />
+        <p className="pt-8 text-xl font-bold px-80 sm:px-5 sm:text-justify">NOUVEAU - Programmes disponibles sous forme de vidéos</p>
+        <p className="pt-8 pb-8 text-md font-thin px-80 sm:px-5 sm:text-justify">Des cours de sport en vidéo sont désormais disponibles pour les amateurs de fitness et les sportifs en herbe. Pour y accéder, il suffit de souscrire à un abonnement spécial. Ce dernier offre un accès illimité à une variété de cours en ligne, conçus pour s'adapter à tous les niveaux et à toutes les disciplines sportives. Les vidéos sont enseignées par un professionnel du fitness expérimenté, garantissant une qualité de formation optimale. Profitez de cette opportunité pour améliorer votre condition physique et atteindre vos objectifs sportifs en vous entraînant à la maison ou où que vous soyez.</p>
+        <div className="text-center bg-white bg-cover overflow-hidden h-full w-screen pb-12 xs:inline-block xs:bg-black sm:w-full sm:h-full sm:overflow-hidden">
+        <button class="bg-black hover:bg-white hover:border-2 hover:border-black text-white font-semibold hover:text-black py-2 px-4 border border-white hover:border-transparent rounded-none">
+                <a href="/contact">EN SAVOIR PLUS</a>
         </button>
-        <button className="bg-gray-300 hover:bg-gray-100 text-gray-800 font-bold text-6xl py-36 px-4 border border-gray-400 rounded shadow sm:py-5 sm:text-xl sm:w-full">
-          <a href="#contact">
-          PRIX / SEANCE <br></br> 
-          SUR DEVIS
-          </a>
-          </button>
+        </div>
+    </div>
+    {/*<div className="overflow-x-hidden bg-white">
+    <div className="animate-marquee whitespace-nowrap">
+        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">VOTRE NIVEAU</span>
+        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">VOTRE NIVEAU</span>
+        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">VOTRE NIVEAU</span>
+        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">VOTRE NIVEAU</span>
+        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">VOTRE NIVEAU</span>
+        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">VOTRE NIVEAU</span>
+        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">VOTRE NIVEAU</span>
+        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">VOTRE NIVEAU</span>
+        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">VOTRE NIVEAU</span>
+        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">VOTRE NIVEAU</span>
+        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">VOTRE NIVEAU</span>
+        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">VOTRE NIVEAU</span>
+    </div>
+            </div>*/}
+    <div className="flex flex-row justify-end items-start bg-hero bg-cover overflow-hidden h-screen w-screen pt-12 sm:pt-5 sm:inline-block xs:bg-hero  xs:w-full ">
+        <div className="grid grid-cols-3 w-full h-full bg-no-repeat md:text-center xs:w-full xs:p-5 z-9999 pl-5">
+          <div className="col-span-1 bg-white h-min w-fit p-5">
+          <p className="text-black text-2xl font-thin text-left pl-5 sm:text-5xl sm:w-full pt-5">POUR TOUT LE MONDE</p>
+          <p className="text-black text-4xl font-semibold pl-5 text-left leading-normal sm:text-3xl sm:w-full">CHOISSISEZ VOTRE NIVEAU</p>
+          <p className="laptop:hidden text-black text-3xl pt-5 font-semibold text-center leading-relaxed sm:text-left sm:pl-5 sm:w-full">PREMIERS PAS <br></br> DEBUTANT<br></br> INTERMEDIAIRE <br></br> CONFIRME <br></br> EXPERT</p>
+          <p className="sm:hidden text-black text-justify text-xl font-light text-left pt-5 pl-5 pb-5 leading-relaxed sm:w-full">Les cours de sport sont conçus pour s'adapter à tous les niveaux, que vous soyez un débutant ou un expert.<br></br> Si vous êtes un débutant, le niveau <strong className="font-bold">"Premiers Pas"</strong> est fait pour vous, avec des cours conçus pour vous familiariser avec les bases du sport que vous avez choisi.<br></br> Si vous avez déjà quelques compétences, le niveau <strong className="font-bold">"Débutant"</strong> est là pour vous aider à les développer.<br></br> Pour ceux qui ont déjà une expérience pratique, le niveau <strong className="font-bold">"Intermédiaire"</strong> offre des cours plus avancés pour vous aider à améliorer vos compétences.<br></br> Les sportifs confirmés peuvent rejoindre le niveau <strong className="font-bold">"Confirmé"</strong>, qui propose des cours pour les aider à atteindre leur plein potentiel.<br></br> Les athlètes les plus expérimentés peuvent se joindre au niveau <strong className="font-bold">"Expert"</strong>, où ils peuvent développer leurs compétences à un niveau encore plus élevé. Tous les niveaux sont conçus pour être accessibles et stimulants, vous aidant à atteindre vos objectifs de sport de la manière la plus efficace possible.</p>
+          <div className="pl-5">
+          <button class="bg-black hover:bg-white hover:border-2 hover:border-black text-white font-semibold hover:text-black py-2 px-4 border border-white hover:border-transparent rounded-none">
+                <a href="/contact">COMMENCEZ DES AUJOURD'HUI</a>
+        </button>
+        </div>
+          </div>
+        </div>  
+    </div>
+    {/*<div className="overflow-x-hidden bg-white" id="#cours">
+    <div className="animate-marquee whitespace-nowrap">
+        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">LES COURS DISPONIBLES</span>
+        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">LES COURS DISPONIBLES</span>
+        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">LES COURS DISPONIBLES</span>
+        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">LES COURS DISPONIBLES</span>
+        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">LES COURS DISPONIBLES</span>
+        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">LES COURS DISPONIBLES</span>
+        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">LES COURS DISPONIBLES</span>
+        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">LES COURS DISPONIBLES</span>
+        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">LES COURS DISPONIBLES</span>
+        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">LES COURS DISPONIBLES</span>
+        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">LES COURS DISPONIBLES</span>
+        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">LES COURS DISPONIBLES</span>
+    </div>
+        </div>*/}
+    <div className="text-left bg-white bg-cover overflow-hidden h-full w-screen pt-12 sm:pt-24 xs:inline-block xs:bg-black sm:w-full sm:h-full sm:overflow-hidden">
+        <Image 
+        src="/Mobile version.png"
+        alt="programme"
+        width={1200}
+        height={687}
+        className="mx-auto sm:px-5"
+        />
+        <p className="pt-8 text-xl font-bold px-80 sm:px-5 sm:text-justify uppercase">REJOIGNEZ LA COMMUNAUTé</p>
+        <p className="pt-8 pb-8 text-md font-thin px-80 sm:px-5 sm:text-justify">Il est temps de rejoindre une communauté de sportifs déterminés à atteindre leurs objectifs fitness. Avec un coach diplômé et expérimenté, vous bénéficierez d'un encadrement personnalisé pour atteindre vos objectifs. Que vous cherchiez à améliorer votre condition physique, à perdre du poids ou à vous préparer pour une compétition, je vous aiderai à mettre en place un plan d'entraînement sur mesure pour atteindre vos objectifs de manière efficace. Rejoindre notre communauté de sportifs, c'est également bénéficier de l'énergie et de l'entraide de personnes qui partagent les mêmes passions et les mêmes objectifs que vous. N'attendez plus pour vous lancer et atteindre vos objectifs sportifs.</p>
+        <div className="text-left px-80 bg-white bg-cover overflow-hidden h-full w-screen pb-24 xs:inline-block xs:bg-black sm:w-full sm:pl-5 sm:h-full sm:w-screen sm:text-center ">
+        <button class="bg-black hover:bg-white hover:border-2 hover:border-black text-white font-semibold hover:text-black py-2 px-4 border border-white hover:border-transparent rounded-none">
+                <a href="/contact">COMMENCEZ VOTRE ESSAI GRATUIT</a>
+        </button>
+        </div>
+        <p className="pt-8 pb-12 text-4xl text-center font-bold px-80 sm:px-5 sm:text-center sm:text-xl uppercase">les cours disponibles</p>
+        <div className="pb-24">
+        <Image
+        src="/Programmes FW (1).png"
+        alt="programme"
+        width={1200}
+        height={687}
+        className="mx-auto sm:px-5 pb-12"
+        />
+        <div className="text-center px-80 bg-white bg-cover overflow-hidden h-full w-screen pb-24 xs:inline-block xs:bg-black sm:w-full sm:pl-5 sm:text-center sm:h-full sm:overflow-hidden">
+        <button class="bg-black hover:bg-white hover:border-2 hover:border-black text-white font-semibold hover:text-black py-2 px-4 border border-white hover:border-transparent rounded-none">
+                <a href="/contact" className="uppercase">Découvrir les cours</a>
+        </button>
+        </div>
+        </div>
+    <hr class="my-6 border-orange-400 sm:mx-auto dark:border-gray-700 lg:my-8"/>
+    </div>
+    {/*<div className="overflow-x-hidden bg-white">
+    <div className="animate-marquee whitespace-nowrap">
+        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">TARIFS</span>
+        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">TARIFS</span>
+        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">TARIFS</span>
+        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">TARIFS</span>
+        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">TARIFS</span>
+        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">TARIFS</span>
+        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">TARIFS</span>
+        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">TARIFS</span>
+        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">TARIFS</span>
+        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">TARIFS</span>
+        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">TARIFS</span>
+        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">TARIFS</span>
+    </div>
+    </div>*/}
+    <div className=" bg-white bg-no-repeat overflow-hidden h-full w-screen pt-10 xs:pt-48 xs:inline-block xs:bg-hero xs:w-full sm:pt-0 sm:h-full">
+      <p className="text-black text-center text-4xl uppercase font-bold pt-10 pb-20 sm:text-xl sm:px-10 sm:pt-5 sm:pb-0 sm:text-center">LES 7 PREMIERS JOURS SONT GRATUITS - ANNULEZ à TOUT MOMENT</p>
+      <div className="grid grid-cols-2 gap-20 p-20 sm:inline-block sm:h-full sm:p-10 sm:grid sm:grid-cols-1 sm:gap-10">
+        <a href="/contact">
+        <Image
+        src="/1.png"
+        alt="programme"
+        width={600}
+        height={340}
+        className="mx-auto sm:px-5 pb-12"
+        />
+        </a>
+        <a href="/contact">
+        <Image
+        src="/2.png"
+        alt="programme"
+        width={600}
+        height={340}
+        className="mx-auto sm:px-5 pb-12"
+        />
+        </a>
       </div> 
       <div className="pl-20 pr-20 sm:pl-10 sm:pr-10 sm:pb-10 sm:text-xl sm:w-full">
       <div class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md sm:py-5 sm:text-xl sm:w-full" role="alert">

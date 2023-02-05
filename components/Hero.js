@@ -63,6 +63,7 @@ export default function Hero() {
         width={1200}
         height={687}
         className="mx-auto sm:px-5"
+        loading="eager"
         />
         <p className="pt-8 text-xl font-bold px-80 sm:px-5 sm:text-justify">NOUVEAU - Programmes disponibles sous forme de vidéos</p>
         <p className="pt-8 pb-8 text-md font-thin px-80 sm:px-5 sm:text-justify">Des cours de sport en vidéo sont désormais disponibles pour les amateurs de fitness et les sportifs en herbe. Pour y accéder, il suffit de souscrire à un abonnement spécial. Ce dernier offre un accès illimité à une variété de cours en ligne, conçus pour s'adapter à tous les niveaux et à toutes les disciplines sportives. Les vidéos sont enseignées par un professionnel du fitness expérimenté, garantissant une qualité de formation optimale. Profitez de cette opportunité pour améliorer votre condition physique et atteindre vos objectifs sportifs en vous entraînant à la maison ou où que vous soyez.</p>
@@ -129,7 +130,7 @@ export default function Hero() {
         />
         <p className="pt-8 text-xl font-bold px-80 sm:px-5 sm:text-justify uppercase">REJOIGNEZ LA COMMUNAUTé</p>
         <p className="pt-8 pb-8 text-md font-thin px-80 sm:px-5 sm:text-justify">Il est temps de rejoindre une communauté de sportifs déterminés à atteindre leurs objectifs fitness. Avec un coach diplômé et expérimenté, vous bénéficierez d'un encadrement personnalisé pour atteindre vos objectifs. Que vous cherchiez à améliorer votre condition physique, à perdre du poids ou à vous préparer pour une compétition, je vous aiderai à mettre en place un plan d'entraînement sur mesure pour atteindre vos objectifs de manière efficace. Rejoindre notre communauté de sportifs, c'est également bénéficier de l'énergie et de l'entraide de personnes qui partagent les mêmes passions et les mêmes objectifs que vous. N'attendez plus pour vous lancer et atteindre vos objectifs sportifs.</p>
-        <div className="text-left px-80 bg-white bg-cover overflow-hidden h-full w-screen pb-24 xs:inline-block xs:bg-black sm:w-full sm:pl-5 sm:h-full sm:w-screen sm:text-center ">
+        <div className="text-left px-80 bg-white bg-cover overflow-hidden h-full w-screen pb-24 sm:pb-8 xs:inline-block xs:bg-black sm:w-full sm:pl-5 sm:h-full sm:w-screen sm:text-center ">
         <button class="bg-black hover:bg-white hover:border-2 hover:border-black text-white font-semibold hover:text-black py-2 px-4 border border-white hover:border-transparent rounded-none">
                 <a href="/contact">COMMENCEZ VOTRE ESSAI GRATUIT</a>
         </button>
@@ -143,7 +144,7 @@ export default function Hero() {
         height={687}
         className="mx-auto sm:px-5 pb-12"
         />
-        <div className="text-center px-80 bg-white bg-cover overflow-hidden h-full w-screen pb-24 xs:inline-block xs:bg-black sm:w-full sm:pl-5 sm:text-center sm:h-full sm:overflow-hidden">
+        <div className="text-center px-80 bg-white bg-cover overflow-hidden h-full w-screen pb-12 xs:inline-block xs:bg-black sm:w-full sm:pl-5 sm:pb-8 sm:text-center sm:h-full sm:overflow-hidden">
         <button class="bg-black hover:bg-white hover:border-2 hover:border-black text-white font-semibold hover:text-black py-2 px-4 border border-white hover:border-transparent rounded-none">
                 <a href="/contact" className="uppercase">Découvrir les cours</a>
         </button>
@@ -194,8 +195,8 @@ export default function Hero() {
         <div class="flex">
           <div class="py-1"><svg class="fill-current h-6 w-6 text-teal-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z"/></svg></div>
             <div>
-              <p class="sm:hidden font-bold">Information</p>
-              <p class="text-sm">Pour en savoir plus, n'hésitez pas à cliquer sur la formule vous correspondant le mieux, je vous recontacterai dans les plus brefs délais.</p>
+              <p class="sm:hidden text-xl font-bold">Information</p>
+              <p class="text-lg sm:text-sm">Pour avoir un prix à la séance, merci de remplir le formulaire de contact en cliquant <a href="/contact" className="underline font-bold">ICI</a> , je vous recontacterai dans les plus brefs délais.</p>
             </div>
           </div>
         </div>
@@ -217,7 +218,43 @@ export default function Hero() {
         <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">PENSEZ-Y</span>
     </div>
 </div>*/}
-     
+    <div className="text-center bg-white bg-cover overflow-hidden h-full w-screen pt-12 sm:pt-6 xs:inline-block xs:bg-black sm:w-full sm:h-full sm:overflow-hidden">
+        <hr class="my-6 border-orange-400 sm:mx-auto dark:border-gray-700 lg:my-8"/>
+        <p className="pt-8 text-4xl font-bold px-80 sm:px-5 pb-16 sm:pb-8 sm:text-xl sm:px-10 sm:pt-5 sm:pb-0 sm:text-center">PENSEZ-Y</p>
+        <div className="grid grid-cols-2 gap-4 sm:grid sm:grid-cols-1">
+        <Image
+        src="/3.png"
+        alt="programme"
+        width={600}
+        height={340}
+        className="mx-auto sm:px-5 pb-12"
+        />
+        <Image
+        src="/2(1).png"
+        alt="programme"
+        width={600}
+        height={340}
+        className="mx-auto sm:px-5 pb-12"
+        /><Image
+        src="/1(1).png"
+        alt="programme"
+        width={600}
+        height={340}
+        className="mx-auto sm:px-5 pb-12"
+        /><Image
+        src="/4.png"
+        alt="programme"
+        width={600}
+        height={340}
+        className="mx-auto sm:px-5 pb-12"
+        />
+        </div>
+        <div className="pb-24 pt-12">
+        <button class="bg-black hover:bg-white hover:border-2 hover:border-black text-white font-semibold hover:text-black py-2 px-4 border border-white hover:border-transparent rounded-none">
+                <a href="/contact" className="uppercase">N'attendez plus !</a>
+        </button>
+        </div>
+    </div>
     </>
   );
 }

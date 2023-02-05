@@ -7,13 +7,13 @@ export default function Footer () {
     <div class="sm:grid sm:justify-between">
         <div class="mb-6 sm:mb-0">
             <a href="#" class="flex items-center">
-                <img src="https://i.ibb.co/cbQfXN0/LOGO-DARK.png" class="h-36 mr-3" alt="fitnesswin Logo" />
-                <span class="self-center text-5xl text-white font-semibold whitespace-nowrap sm:text-3xl">FITNESS WIN</span>
+                <img src="LOGO DARK.png" class="h-36 mr-3" alt="fitnesswin Logo" />
+                <span class="self-center text-5xl text-white font-semibold whitespace-nowrap sm:hidden">FITNESS WIN</span>
             </a>
         </div>
-        <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+        <div class="grid grid-cols-3 gap-8 sm:gap-6 sm:grid-cols-1">
             <div>
-                <h2 class="mb-6 text-2xl font-semibold text-gray-100 uppercase dark:text-white">Resources</h2>
+                <h2 class="mb-6 text-2xl font-semibold text-gray-100 uppercase dark:text-white">Ressources</h2>
                 <ul class="text-white dark:text-gray-400">
                     <li class="mb-4">
                         <a href="/#" class="hover:underline">FITNESS WIN</a>
@@ -25,6 +25,7 @@ export default function Footer () {
                         <a href="/contact" class="hover:underline">CONTACT</a>
                     </li>
                 </ul>
+                <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8 laptop:hidden" />
             </div>
             <div>
                 <h2 class="mb-6 text-2xl font-semibold text-gray-100 uppercase dark:text-white">suivez-moi</h2>
@@ -36,6 +37,7 @@ export default function Footer () {
                         <a href="#" class="hover:underline">TWITTER</a>
                     </li>
                 </ul>
+                <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8 laptop:hidden" />
             </div>
             <div className="sm:">
                 <h2 class="mb-6 text-2xl font-semibold text-gray-100 uppercase dark:text-white">Legal</h2>

@@ -39,12 +39,12 @@ export default function Example() {
                   <a href='/#'>
                   <img
                     className="pl-5 block h-16 w-auto sm:hidden sm:justify-center"
-                    src="https://i.ibb.co/cbQfXN0/LOGO-DARK.png"
+                    src="LOGO DARK.png"
                     alt="FITNESS WIN"
                   />
                   <img
                     className="laptop:hidden h-16 w-auto lg:block lg:justify-start pl-10"
-                    src="https://i.ibb.co/nrRM4PB/LOGO-DARK-MOBILE.png"
+                    src="LOGO DARK.png"
                     alt="FITNESS WIN"
                   />
                   </a>

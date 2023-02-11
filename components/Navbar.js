@@ -1,5 +1,6 @@
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
+import Image from 'next/image'
 
 const navigation = [
   { name: 'Cours', href: '/construction', current: false },
@@ -90,30 +91,45 @@ export default function Example() {
                       <Menu.Item>
                         {({ active }) => (
                           <a
-                            href="#"
-                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-black')}
+                            href="/traduction"
+                            className={classNames(active ? 'bg-gray-100' : '', 'block px-2 py-2')}
                           >
-                            ENGLISH
+                            <Image 
+                            src="/united-kingdom.png"
+                            alt='english'
+                            width={32}
+                            height={32}
+                            />
                           </a>
                         )}
                       </Menu.Item>
                       <Menu.Item>
                         {({ active }) => (
                           <a
-                            href="#"
-                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-black')}
+                            href="/traduction"
+                            className={classNames(active ? 'bg-gray-100' : '', 'block px-2 py-2')}
                           >
-                            ESPANOL
+                            <Image 
+                            src="/spain.png"
+                            alt='espanol'
+                            width={32}
+                            height={32}
+                            />
                           </a>
                         )}
                       </Menu.Item>
                       <Menu.Item>
                         {({ active }) => (
                           <a
-                            href="#"
-                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-black')}
+                            href="/traduction"
+                            className={classNames(active ? 'bg-gray-100' : '', 'block px-2 py-2')}
                           >
-                            ITALIAN
+                            <Image 
+                            src="/italy.png"
+                            alt='italian'
+                            width={32}
+                            height={32}
+                            />
                           </a>
                         )}
                       </Menu.Item>

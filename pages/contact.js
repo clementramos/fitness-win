@@ -6,14 +6,13 @@ import Footer from "@/components/Footer";
 const Contact = () => {
     const [message, setMessage] = useState("");
     const formRef = useRef();
-    const submitForm = async (e) => {
+    const submitContact = async (e) => {
         e.preventDefault();
         console.log(e);
         const res = await sendContactForm({
-            firstname: e.target[0].value,
-            lastname: e.target[1].value,
-            email: e.target[2].value,
-            phone: e.target[3].value,
+            firstname: e.target.firstname.value,
+            phone: e.target.phone.value,
+            message: e.target.message.value,
         });
         if (res == 0) {
             setMessage("Merci de m'avoir contacté ! Je répondrais au plus vite !");
@@ -23,63 +22,49 @@ const Contact = () => {
     };
     return (
         <><Navbar />
-        <div className="pt-48 h-full text-center text-3xl text-white sm:pt-20 sm:px-4">
-            <p className="text-2xl">
-                Merci de me laisser vos coordonnées, je vous recontacterais dès que possible.
-            </p>
-            <div className="py-8 lg:py-16 px-4 mx-auto max-w-3xl">
-                <div>
-                    {message}
-                    <span onClick={() => setMessage("")}>
-                        &times;
-                    </span>
-                </div>
+        <div className="pt-48 h-full text-center bg-white text-3xl text-black sm:pt-20 sm:px-4">
+        <p className="pt-8 pb-4 text-4xl text-center font-black px-80 sm:px-5 sm:text-center sm:text-xl uppercase">RESTONS EN CONTACT</p>
+        <p className="pt-4 pb-8 text-2xl font-thin px-80 sm:px-5 sm:text-justify">Je suis là pour vous aider. Envoyez-moi vos questions ou commentaires, et je vous répondrais dans les plus brefs délais.</p>
+        <p className="pt-4 pb-8 text-2xl font-thin px-80 sm:px-5 sm:text-justify">Veuillez utiliser le formulaire de contact ci-dessous pour nous joindre. Vous pouvez également envoyer un courriel à ... ou appeler le ... de ...</p>
+        <p className="pt-8 pb-4 text-4xl text-center font-black px-80 sm:px-5 sm:text-center sm:text-xl uppercase">Envoyez moi un mail</p>
+            <div className="py-8 lg:py-16 px-4 mx-auto max-w-5xl">
                 <form
-                    className="space-y-8"
+                    className=""
                     ref={formRef}
-                    onSubmit={submitForm}
+                    onSubmit={submitContact}
                 >
-                <div>
-                    <label for="name" class="text-left block mb-2 text-md font-medium text-white">Votre prénom :</label>
-                    <input className="shadow-sm text-white text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-green-500 focus:border-green-500 shadow-sm-light"
+                <div className="pb-10">
+                    <label for="firstname" id="firstname" name="firstname" class="text-left block mb-2 text-base font-medium text-black">Votre prénom :</label>
+                    <input id="firstname" className="shadow-sm text-white text-sm rounded-none focus:ring-black focus:border-black block w-full p-2.5 bg-transparent border-orange-400 placeholder-gray-400 text-black focus:ring-black focus:border-black shadow-sm-light"
                         required
-                        placeholder="Prénom *"
                         type={"text"}
                         minLength={3}
                         maxLength={25} />
                 </div>
-                  
-                <div>
-                    <label for="lastname" class="text-left block mb-2 text-md font-medium text-white">Votre nom :</label>
-                    <input className="shadow-sm text-white text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-green-500 focus:border-green-500 shadow-sm-light"
+                <div className="pb-10"> 
+                    <label for="phone" id="phone" name="phone" class="text-left block mb-2 text-base font-medium text-black">Votre téléphone :</label>
+                    <input id="phone" className="shadow-sm text-white text-sm rounded-none focus:ring-black focus:border-black block w-full p-2.5 bg-transparent border-orange-400 placeholder-gray-400 text-black focus:ring-black focus:border-black shadow-sm-light"
                         required
-                        placeholder="Nom *"
-                        type={"text"}
-                        minLenght={3}
-                        maxLength={25} />
-                </div>
-
-                <div>
-                    <label for="mail" class="text-left block mb-2 text-md font-medium text-white">Votre mail :</label>
-                    <input className="shadow-sm text-white text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-green-500 focus:border-green-500 shadow-sm-light"
-                        required
-                        placeholder="Mail *"
-                        type={"mail"} />
-                </div>
-
-                <div>
-                    <label for="phone" class="text-left block mb-2 text-md font-medium text-white">Votre téléphone :</label>
-                    <input className="shadow-sm text-white text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-green-500 focus:border-green-500 shadow-sm-light"
-                        required
-                        placeholder="Téléphone *"
                         type={"tel"}
-                        minLenght={10}
+                        minLength={10}
                         maxLength={10} />
                 </div>
-                    <button type="submit" className="py-3 px-5 text-md w-full font-medium text-center text-white rounded-lg bg-green-500  hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 bg-primary-600 hover:bg-primary-700 focus:ring-primary-800">
+                <div className="w-full pb-10">
+                    <label for="message" id="message" name="message" class="text-left block mb-2 text-base font-medium text-black">Votre message :</label>
+                    <textarea id="message" className="shadow-sm text-white text-sm rounded-none focus:ring-black focus:border-black block w-full h-40 p-2.5 bg-transparent border-orange-400 placeholder-gray-400 text-black focus:ring-black focus:border-black shadow-sm-light">
+                    </textarea>
+                </div>
+                <button type="submit" className="py-3 px-5 text-base w-full font-medium text-center text-white rounded-lg bg-green-500  hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 bg-primary-600 hover:bg-primary-700 focus:ring-primary-800">
                         Envoyer
                     </button>
+                    <div>
+                    {message}
+                    <span onClick={() => setMessage("")} className="text-white bg-green">
+                        &times;
+                    </span>
+                </div>
                 </form>
+                
             </div>
         </div>
         <Footer/></>

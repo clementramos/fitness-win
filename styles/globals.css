@@ -86,7 +86,7 @@ body {
   overflow-x: hidden;
   background-color: black;
   height: hmax;
-  font-family: 'Fjalla One', sans-serif;
+  /*font-family: 'Coalition';*/
 }
 
 a {
@@ -98,4 +98,16 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+@font-face {
+  font-family: 'Coalition';
+    src: url('../public/fonts/Coalition.eot');
+    src: url('../public/fonts/Coalition.eot?#iefix') format('embedded-opentype'),
+        url('../public/fonts/Coalition.woff2') format('woff2'),
+        url('../public/fonts/Coalition.woff') format('woff'),
+        url('../public/fonts/Coalition.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
 }

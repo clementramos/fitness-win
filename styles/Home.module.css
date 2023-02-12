@@ -7,6 +7,11 @@
   min-height: 100vh;
 }
 
+.testFont {
+  font-family: 'Coalition';
+  font-weight: bold !important;
+  
+}
 .description {
   display: inherit;
   justify-content: inherit;

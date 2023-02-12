@@ -40,7 +40,7 @@ export default function Hero() {
     initial="out"
     exit="out"
     />
-    <div className="items-start bg-hero1 bg-cover overflow-hidden h-screen w-screen pt-56 sm:pt-24 xs:inline-block xs:bg-black sm:w-full sm:h-full sm:overflow-hidden">
+    <div className="testFont items-start bg-hero1 bg-cover overflow-hidden h-screen w-screen pt-56 sm:pt-24 xs:inline-block xs:bg-black sm:w-full sm:h-full sm:overflow-hidden">
         <div className="laptop: hidden h-full bg-no-repeat bg-hero md:text-center sm:w-full xs:p-5 z-9999">
         </div>
             <div className="text-center sm:w-full sm:p-5 h-screen">

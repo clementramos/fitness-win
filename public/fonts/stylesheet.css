@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Coalition';
+    src: url('Coalition.eot');
+    src: url('Coalition.eot?#iefix') format('embedded-opentype'),
+        url('Coalition.woff2') format('woff2'),
+        url('Coalition.woff') format('woff'),
+        url('Coalition.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+

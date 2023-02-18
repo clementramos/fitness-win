@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Image from "next/image";
 
-export default function Construction () {
+export default function Coaching () {
     return (
         <>
         <Head/>
@@ -15,7 +15,7 @@ export default function Construction () {
             <p className="text-white text-center text-[9rem] sm:text-5xl sm:w-full sm:pb-5 sm:pt-48 sm:text-center uppercase font-bold tracking-tighter">coaching personnalisé</p>
               <p className="text-white text-center text-4xl sm:text-3xl font-light uppercase pb-12">J'interviens avec vous en extérieur, en salle ou à domicile.</p>
               <button class="bg-transparent hover:bg-white text-white font-semibold hover:text-black py-2 px-4 border border-white hover:border-transparent rounded-none">
-                <a href="/contact" className="uppercase">être recontacté</a>
+                <a href="/contact" className="uppercase text-2xl">être recontacté</a>
               </button>
               <p className="text-white text-center text-4xl sm:text-3xl font-light uppercase pt-12">En savoir plus</p>
               <button class="bg-transparent py-2 px-4">

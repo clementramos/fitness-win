@@ -34,6 +34,7 @@ module.exports = {
       'programm' : "url(../public/FB_IMG_1528984283679-transformed.png)",
       'prices' : "url(../public/a8ed74ae-264b-4f32-8a6d-ebc32f07a27d-transformed.png)",
       'coaching' : "url(../public/COACHING.png)",
+      'formation' : "url(../public/formation.jpg)"
     },
     animation : {
       'marquee' : 'marquee 25s linear infinite',

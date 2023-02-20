@@ -26,7 +26,7 @@ export default function Formation () {
         <div id="coach" className="pt-12 pb-12 h-full bg-white">
             <div className="grid grid-cols-2 sm:grid sm:grid-cols-1">
             <Image
-            src="/311570308_641559930777314_8448899628317687854_n.jpg"
+            src="/formation1.jpg"
             alt="formation"
             width={800}
             height={500}

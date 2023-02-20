@@ -3,7 +3,7 @@ import { Disclosure, Menu, Transition } from '@headlessui/react'
 import Image from 'next/image'
 
 const navigation = [
-  { name: 'Cours', href: '/construction', current: false },
+  { name: 'Cours', href: '/cours', current: false },
   { name: 'Coaching', href: '/coaching', current: false },
   { name: 'Formation', href: '/formation', current: false },
   { name: 'D\'Jo Edwards', href: '/construction', current: false },

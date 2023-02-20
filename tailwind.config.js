@@ -37,7 +37,9 @@ module.exports = {
       'prices' : "url(../public/a8ed74ae-264b-4f32-8a6d-ebc32f07a27d-transformed.png)",
       'coaching' : "url(../public/COACHING.png)",
       'coachingsm' : "url(../public/COACHINGSM.png)",
-      'formation' : "url(../public/formation.jpg)"
+      'formation' : "url(../public/formation.jpg)",
+      'groupe' : "url(../public/groupe.jpg)",
+      'groupesm' : "url(../public/groupesm.jpg)",
     },
     animation : {
       'marquee' : 'marquee 25s linear infinite',

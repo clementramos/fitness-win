@@ -10,7 +10,7 @@ export default function Coaching () {
         <>
         <Head/>
         <Navbar />
-        <div class="flex items-center justify-center h-screen bg-no-repeat bg-cover bg-coaching">
+        <div class="flex items-center justify-center h-screen bg-no-repeat bg-cover bg-coaching sm:bg-coachingsm">
             <div className="text-center sm:w-full sm:p-5 pt-64 h-screen">
             <p className="text-white text-center text-[9rem] sm:text-5xl sm:w-full sm:pb-5 sm:pt-48 sm:text-center uppercase font-bold tracking-tighter">coaching personnalisé</p>
               <p className="text-white text-center text-4xl sm:text-3xl font-light uppercase pb-12">J'interviens avec vous en extérieur, en salle ou à domicile.</p>

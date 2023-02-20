@@ -28,7 +28,9 @@ module.exports = {
       // => @media (max-width: 639px) { ... }
     },
     backgroundImage: {
-      'hero' : "url(../public/311589413_641559444110696_8741248957289991299_n.jpg)",
+      'herosm' : "url(../public/311471864_641559357444038_8460826434024976324_n.jpg)",
+      'conceptsm' : "url(../public/1665925475580.jpg)",
+      'concept' : "url(../public/311589413_641559444110696_8741248957289991299_n.jpg)",
       'hero1' : "url(../public/68663104_2520013301408333_215679822947418112_n.jpg)",
       'level' : "url(../public/received_1295341857306354-removebg.png)",
       'programm' : "url(../public/FB_IMG_1528984283679-transformed.png)",

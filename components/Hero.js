@@ -40,7 +40,7 @@ export default function Hero() {
     initial="out"
     exit="out"
     />
-    <div className="testFont items-start bg-hero1 bg-cover overflow-hidden h-screen w-screen pt-56 sm:pt-56 xs:inline-block xs:bg-black sm:w-full sm:h-full sm:overflow-hidden">
+    <div className="testFont items-start bg-hero1 sm:bg-herosm bg-cover overflow-hidden h-screen w-screen pt-56 sm:pt-56 xs:inline-block xs:bg-black sm:w-full sm:h-full sm:overflow-hidden">
         <div className="laptop: hidden h-full bg-no-repeat bg-hero md:text-center sm:w-full xs:p-5 z-9999">
         </div>
             <div className="text-center sm:w-full sm:p-5 h-screen">
@@ -73,23 +73,51 @@ export default function Hero() {
         </button>
         </div>
     </div>
-    {/*<div className="overflow-x-hidden bg-white">
-    <div className="animate-marquee whitespace-nowrap">
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">VOTRE NIVEAU</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">VOTRE NIVEAU</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">VOTRE NIVEAU</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">VOTRE NIVEAU</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">VOTRE NIVEAU</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">VOTRE NIVEAU</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">VOTRE NIVEAU</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">VOTRE NIVEAU</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">VOTRE NIVEAU</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">VOTRE NIVEAU</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">VOTRE NIVEAU</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">VOTRE NIVEAU</span>
+    <hr class="my-6 border-orange-400 sm:mx-auto dark:border-gray-700 lg:my-8"/>
+    <p className="text-black text-center text-[12rem] sm:text-5xl sm:w-full sm:pb-5 pb-10 sm:text-center font-['Coalition'] tracking-wider">Le concept</p>
+    <div className="grid grid-cols-2 sm:grid sm:grid-cols-1 bg-concept sm:bg-conceptsm bg-cover h-screen sm:h-full w-screen pt-12 pb-12">
+      <Link href="/contact">
+    <Image 
+        src="/niveaux.png"
+        alt="programme"
+        width={400}
+        height={400}
+        className="mx-auto sm:p-5 "
+        loading="eager"
+        />
+        </Link>
+        <Link href="/construction">
+        <Image 
+        src="/cours.png"
+        alt="programme"
+        width={400}
+        height={400}
+        className="mx-auto sm:p-5"
+        loading="eager"
+        />
+        </Link>
+        <Link href="/coaching">
+        <Image 
+        src="/coaching3.png"
+        alt="programme"
+        width={400}
+        height={400}
+        className="mx-auto sm:p-5"
+        loading="eager"
+        />
+        </Link>
+        <Link href="/formation">
+        <Image 
+        src="/formation.png"
+        alt="programme"
+        width={400}
+        height={400}
+        className="mx-auto sm:p-5"
+        loading="eager"
+        />
+        </Link>
     </div>
-            </div>*/}
-    <div className="flex flex-row justify-end items-start bg-hero bg-cover overflow-hidden h-screen w-screen pt-12 sm:pt-5 sm:inline-block xs:bg-hero  xs:w-full ">
+    {/*<div className="flex flex-row justify-end items-start bg-hero bg-cover overflow-hidden h-screen w-screen pt-12 sm:pt-5 sm:inline-block xs:bg-hero  xs:w-full ">
         <div className="grid grid-cols-3 w-full h-full bg-no-repeat md:text-center xs:w-full xs:p-5 z-9999 pl-5">
           <div className="col-span-1 bg-white h-min w-fit p-5">
           <p className="text-black text-2xl font-thin text-left pl-5 sm:text-5xl sm:w-full pt-5">POUR TOUT LE MONDE</p>
@@ -103,23 +131,7 @@ export default function Hero() {
         </div>
           </div>
         </div>  
-    </div>
-    {/*<div className="overflow-x-hidden bg-white" id="#cours">
-    <div className="animate-marquee whitespace-nowrap">
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">LES COURS DISPONIBLES</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">LES COURS DISPONIBLES</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">LES COURS DISPONIBLES</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">LES COURS DISPONIBLES</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">LES COURS DISPONIBLES</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">LES COURS DISPONIBLES</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">LES COURS DISPONIBLES</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">LES COURS DISPONIBLES</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">LES COURS DISPONIBLES</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">LES COURS DISPONIBLES</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">LES COURS DISPONIBLES</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">LES COURS DISPONIBLES</span>
-    </div>
-        </div>*/}
+            </div>*/}
     <div className="text-left bg-white bg-cover overflow-hidden h-full w-screen pt-12 sm:pt-24 xs:inline-block xs:bg-black sm:w-full sm:h-full sm:overflow-hidden">
         <Image 
         src="/Mobile version.png"
@@ -152,22 +164,6 @@ export default function Hero() {
         </div>
     <hr class="my-6 border-orange-400 sm:mx-auto dark:border-gray-700 lg:my-8"/>
     </div>
-    {/*<div className="overflow-x-hidden bg-white">
-    <div className="animate-marquee whitespace-nowrap">
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">TARIFS</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">TARIFS</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">TARIFS</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">TARIFS</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">TARIFS</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">TARIFS</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">TARIFS</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">TARIFS</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">TARIFS</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">TARIFS</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">TARIFS</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">TARIFS</span>
-    </div>
-    </div>*/}
     <div className=" bg-white bg-no-repeat overflow-hidden h-full w-screen pt-10 xs:pt-48 xs:inline-block xs:bg-hero xs:w-full sm:pt-0 sm:h-full">
       <p className="text-black text-center text-4xl uppercase font-bold pt-10 pb-20 sm:text-xl sm:px-10 sm:pt-5 sm:pb-0 sm:text-center">LES 7 PREMIERS JOURS SONT GRATUITS - ANNULEZ à TOUT MOMENT</p>
       <div className="grid grid-cols-2 gap-20 p-20 sm:inline-block sm:h-full sm:p-10 sm:grid sm:grid-cols-1 sm:gap-10">
@@ -202,22 +198,6 @@ export default function Hero() {
         </div>
       </div>
     </div>
-    {/*<div className="overflow-x-hidden bg-white">
-    <div className="animate-marquee whitespace-nowrap">
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">PENSEZ-Y</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">PENSEZ-Y</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">PENSEZ-Y</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">PENSEZ-Y</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">PENSEZ-Y</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">PENSEZ-Y</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">PENSEZ-Y</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">PENSEZ-Y</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">PENSEZ-Y</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">PENSEZ-Y</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">PENSEZ-Y</span>
-        <span className="mx-4 text-black h-fit text-center bg-white text-6xl sm:text-xl">PENSEZ-Y</span>
-    </div>
-</div>*/}
     <div className="text-center bg-white bg-cover overflow-hidden h-full w-screen pt-12 sm:pt-6 xs:inline-block xs:bg-black sm:w-full sm:h-full sm:overflow-hidden">
         <hr class="my-6 border-orange-400 sm:mx-auto dark:border-gray-700 lg:my-8"/>
         <p className="pt-8 text-4xl font-bold px-80 sm:px-5 pb-16 sm:pb-8 sm:text-xl sm:px-10 sm:pt-5 sm:pb-0 sm:text-center">PENSEZ-Y</p>

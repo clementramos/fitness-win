@@ -84,7 +84,7 @@ html,
 body {
   scroll-behavior: smooth;
   overflow-x: hidden;
-  background-color: black;
+  background-color: white;
   height: hmax;
   /*font-family: 'Coalition';*/
 }

@@ -40,6 +40,8 @@ module.exports = {
       'formation' : "url(../public/formation.jpg)",
       'groupe' : "url(../public/groupe.jpg)",
       'groupesm' : "url(../public/groupesm.jpg)",
+      'biographie' : "url(../public/djo.jpg)",
+      'biographiesm' : "url(../public/djosm.jpg)",
     },
     animation : {
       'marquee' : 'marquee 25s linear infinite',

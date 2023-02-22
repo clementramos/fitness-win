@@ -7,6 +7,7 @@ const navigation = [
   { name: 'Coaching', href: '/coaching', current: false },
   { name: 'Formation', href: '/formation', current: false },
   { name: 'D\'Jo Edwards', href: '/biographie', current: false },
+  { name: 'Blog', href: '/blog', current: false},
 ]
 
 function classNames(...classes) {

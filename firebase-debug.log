@@ -1,0 +1,21 @@
+[debug] [2023-02-21T08:34:37.832Z] ----------------------------------------------------------------------
+[debug] [2023-02-21T08:34:37.834Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ramos\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-02-21T08:34:37.835Z] CLI Version:   11.23.1
+[debug] [2023-02-21T08:34:37.835Z] Platform:      win32
+[debug] [2023-02-21T08:34:37.835Z] Node Version:  v16.15.0
+[debug] [2023-02-21T08:34:37.836Z] Time:          Tue Feb 21 2023 09:34:37 GMT+0100 (heure normale d’Europe centrale)
+[debug] [2023-02-21T08:34:37.836Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-02-21T08:34:37.843Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-02-21T08:34:37.843Z] > authorizing via signed-in user (devup@clementramos.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\ramos\OneDrive\Bureau\FITNESS WIN\fitness-win
+

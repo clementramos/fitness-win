@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { redirect } from 'next/navigation';
 
-import SignOut from '../..components/SignOut';
+import SignOut from '../../components/SignOut';
 import createClient from '../../lib/supabase-server';
 
 export default async function Profile() {

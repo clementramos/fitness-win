@@ -1,18 +1,26 @@
-import { useEffect } from "react";
-import { supabase } from "../utils/supabase";
+import { Auth, ThemeSupa } from '@supabase/auth-ui-react'
+import { useSession, useSupabaseClient } from '@supabase/auth-helpers-react'
+import account from '../pages/account'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
-const Login = () => {
-    useEffect(() => {
-        supabase.auth.signInWithOAuth({
-            provider: 'google',
-        });
-    }, []);
+const Account = () => {
+  const session = useSession()
+  const supabase = useSupabaseClient()
 
-    return(
-        <p>
-            En cours de connexion...
-        </p>
-    )
-};
+  return (
+    <>
+    <Navbar />
+    <div className="container" style={{ padding: '50px 0 100px 0' }}>
+          {!session ? (
+              <Auth supabaseClient={supabase} appearance={{ theme: ThemeSupa }} theme="default" />
+          ) : (
+              <account session={session} />
+          )}
+      </div>
+      <Footer />
+      </>
+  )
+}
 
-export default Login;
+export default Account

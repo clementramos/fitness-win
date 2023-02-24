@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const forms = require('@tailwindcss/forms');
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -7,6 +9,8 @@ module.exports = {
     "./pages/**/*.{ts,tsx}",
     "./public/**/*.html"
   ],
+  darkMode: 'media',
+  plugins: [forms],
   theme: {
     extend: {},
     screens: {
@@ -58,8 +62,5 @@ module.exports = {
       }
     },
   },
-  plugins: [
-    require("flowbite/plugin")
-  ],
 }
 

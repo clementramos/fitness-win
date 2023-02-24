@@ -5,7 +5,6 @@ import Footer from "../components/Footer";
 import Link from "next/link";
 
 function Blog({ blog }) {
-  console.log(supabase.auth.getUser());
   return (
     <>
     <Navbar/>

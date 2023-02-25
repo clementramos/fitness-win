@@ -1,6 +1,6 @@
 import { AuthProvider } from '../components/AuthProvider';
 import createClient from '../lib/supabase-server';
-// do not cache this layout
+
 export const revalidate = 0;
 
 export default async function RootLayout({ children }) {

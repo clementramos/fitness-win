@@ -1,5 +1,5 @@
 import { AuthProvider } from '../components/AuthProvider';
-import createClient from '../lib/supabase-server';
+import createClient from '../lib/client';
 // do not cache this layout
 export const revalidate = 0;
 

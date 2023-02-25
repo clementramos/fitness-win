@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { redirect } from 'next/navigation';
 
 import SignOut from '../../components/SignOut';
-import createClient from '../../lib/client';
+import { createClient } from '../../lib/client';
 
 export default async function Profile() {
   const supabase = createClient();

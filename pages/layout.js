@@ -1,14 +1,20 @@
 import { AuthProvider } from '../components/AuthProvider';
 import createClient from '../lib/supabase-server';
+import { useState, useEffect } from 'react';
 
 export const revalidate = 0;
 
-export default async function RootLayout({ children }) {
-  const supabase = createClient();
+export default function RootLayout({ children }) {
+  const [session, setSession] = useState(null);
 
-  const {
-    data: { session },
-  } = await supabase.auth.getSession();
+  useEffect(() => {
+    async function getSessionData() {
+      const supabase = createClient();
+      const { data } = await supabase.auth.getSession();
+      setSession(data?.session);
+    }
+    getSessionData();
+  }, []);
 
   const accessToken = session?.access_token || null;
 

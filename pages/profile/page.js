@@ -4,12 +4,21 @@ import { redirect } from 'next/navigation';
 import SignOut from '../../components/SignOut';
 import createClient from '../../lib/supabase-server';
 
-export default async function Profile() {
+export default function Profile() {
   const supabase = createClient();
+  const router = useRouter();
+  const [user, setUser] = useState(null);
 
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
+  useEffect(() => {
+    async function fetchUser() {
+      const { data } = await supabase.auth.getUser();
+      setUser(data.user);
+      if (!data.user) {
+        router.push('/');
+      }
+    }
+    fetchUser();
+  }, [router, supabase]);
 
   if (!user) {
     redirect('/');

@@ -20,10 +20,10 @@ export default function Profile({ user }) {
   );
 }
 
-export async function getServerSideProps(context) {
-  const session = await requestAsyncStorage(context.req);
+export async function getServerSideProps({ req }) {
+  const session = req.session;
 
-  if (!session.user) {
+  if (!session || !session.user) {
     return {
       redirect: {
         destination: '/',

@@ -4,6 +4,8 @@ import { useState } from 'react';
 import cn from 'classnames';
 import { Field, Form, Formik } from 'formik';
 import * as Yup from 'yup';
+import Navbar from "/components/Navbar"
+import Footer from "/components/Footer"
 
 import { useAuth, VIEWS } from '/components/AuthProvider.js';
 import supabase from '/lib/supabase-browser';
@@ -25,13 +27,15 @@ const ResetPassword = () => {
     if (error) {
       setErrorMsg(error.message);
     } else {
-      setSuccessMsg('Informations de conexxion renvoyées.');
+      setSuccessMsg('Informations de conexion renvoyées.');
     }
   }
 
   return (
-    <div className="card">
-      <h2 className="w-full text-center">MDP oublié ?</h2>
+    <>
+    <Navbar />
+    <div className="card pt-48 sm:pt-20 h-screen">
+      <h2 className="pt-8 pb-4 text-4xl text-center font-black px-80 sm:px-5 sm:text-center sm:text-xl uppercase">Mot de passe oublié ?</h2>
       <Formik
         initialValues={{
           email: '',
@@ -40,10 +44,10 @@ const ResetPassword = () => {
         onSubmit={resetPassword}
       >
         {({ errors, touched }) => (
-          <Form className="column w-full">
-            <label htmlFor="email">Email</label>
+          <Form className="column py-8 lg:py-16 px-4 mx-auto max-w-5xl">
+            <label htmlFor="email" className="text-left block mb-2 text-base font-medium text-black">Votre e-mail</label>
             <Field
-              className={cn('input', errors.email && 'bg-red-50')}
+              className={cn('shadow-sm text-white text-sm rounded-none focus:ring-black focus:border-black block w-full p-2.5 bg-transparent border-orange-400 placeholder-gray-400 text-black focus:ring-black focus:border-black shadow-sm-light', errors.email && 'bg-red-50')}
               id="email"
               name="email"
               placeholder="jane@acme.com"
@@ -52,7 +56,8 @@ const ResetPassword = () => {
             {errors.email && touched.email ? (
               <div className="text-red-600">{errors.email}</div>
             ) : null}
-            <button className="button-inverse w-full" type="submit">
+            <div className="pt-8"></div>
+            <button className="button-inverse w-full uppercase py-3 px-5 text-xl font-medium text-center text-white rounded-lg bg-green-500  hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 bg-primary-600 hover:bg-primary-700 focus:ring-primary-800" type="submit">
               Envoyer le lien
             </button>
           </Form>
@@ -60,10 +65,12 @@ const ResetPassword = () => {
       </Formik>
       {errorMsg && <div className="text-center text-red-600">{errorMsg}</div>}
       {successMsg && <div className="text-center text-black">{successMsg}</div>}
-      <button className="link" type="button" onClick={() => setView(VIEWS.SIGN_IN)}>
+      <button className="px-4 link w-full text-center block mb-2 text-lg font-medium text-black" type="button" onClick={() => setView(VIEWS.SIGN_IN)}>
         Vous vous souvenez du MDP? Se connecter.
       </button>
     </div>
+    <Footer />
+    </>
   );
 };
 

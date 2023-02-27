@@ -5,28 +5,7 @@ import { requestAsyncStorage } from 'next/dist/server/utils'
 import SignOut from '../../components/SignOut';
 import createClient from '../../lib/supabase-server';
 
-export default function Profile() {
-  const supabase = createClient();
-  const router = useRouter();
-  const [user, setUser] = useState(null);
-
-  useEffect(async () => {
-    const session = await requestAsyncStorage.getSession();
-
-    if(!session.user) {
-      redirect('/', { statusCode: 302 });
-    }
-
-    async function fetchUser() {
-      const { data } = await supabase.auth.getUser();
-      setUser(data.user);
-      if(!data.user) {
-        router.push('/');
-      }
-    }
-    fetchUser();
-  }, [fetchUser, router, supabase]);
-
+export default function Profile({ user }) {
   return (
     <div className="card">
       <h2>Votre profil :</h2>
@@ -39,4 +18,33 @@ export default function Profile() {
       <SignOut />
     </div>
   );
+}
+
+export async function getServerSideProps(context) {
+  const session = await requestAsyncStorage(context.req);
+
+  if (!session.user) {
+    return {
+      redirect: {
+        destination: '/',
+        permanent: false,
+      },
+    };
+  }
+
+  const supabase = createClient();
+  const { data } = await supabase.auth.getUser();
+  const user = data.user;
+
+  if (!user) {
+    return {
+      notFound: true,
+    };
+  }
+
+  return {
+    props: {
+      user,
+    },
+  };
 }

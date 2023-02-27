@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { redirect } from 'next/navigation';
+import { requestAsyncStorage } from 'next/dist/server/utils'
 
 import SignOut from '../../components/SignOut';
 import createClient from '../../lib/supabase-server';
@@ -9,20 +10,22 @@ export default function Profile() {
   const router = useRouter();
   const [user, setUser] = useState(null);
 
-  useEffect(() => {
+  useEffect(async () => {
+    const session = await requestAsyncStorage.getSession();
+
+    if(!session.user) {
+      redirect('/', { statusCode: 302 });
+    }
+
     async function fetchUser() {
       const { data } = await supabase.auth.getUser();
       setUser(data.user);
-      if (!data.user) {
+      if(!data.user) {
         router.push('/');
       }
     }
     fetchUser();
-  }, [router, supabase]);
-
-  if (!user) {
-    redirect('/');
-  }
+  }, [fetchUser, router, supabase]);
 
   return (
     <div className="card">

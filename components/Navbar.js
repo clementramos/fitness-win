@@ -163,7 +163,7 @@ export default function Example() {
                       <Menu.Item>
                         {({ active }) => (
                         <a
-                          href="/SignIn"
+                          href="/login"
                           className={classNames(active ? 'bg-gray-100' : '', 'block px-2 py-2')}
                         >
                           Connexion
@@ -178,7 +178,7 @@ export default function Example() {
                       <Menu.Item>
                         {({ active }) => (
                           <a
-                            href="/SignOut"
+                            href="/logout"
                             className={classNames(active ? 'bg-gray-100' : '', 'block px-2 py-2')}
                           >
                             Déconnexion
@@ -194,7 +194,7 @@ export default function Example() {
                       <Menu.Item>
                         {({ active }) => (
                           <a
-                            href="/account"
+                            href="/account1"
                             className={classNames(active ? 'bg-gray-100' : '', 'block px-2 py-2')}
                           >
                             Compte

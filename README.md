@@ -1,38 +1,36 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# FITNESS-WIN
 
-First, run the development server:
+## Introduction
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+FITNESS-WIN is a fitness and sports website designed to help individuals achieve their fitness goals. It is built using Javascript with the React framework and Next.js library for the front-end, and Supabase authentication and Firestore storage for the back-end. The website is live and accessible at this address: [https://fitness-win.vercel.app](https://fitness-win.vercel.app/).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+* **User authentication** : Users can sign up, log in, and log out of the website using the Supabase authentication service.
+* **Workout tracking** : Users can create, view, and edit workout plans to help them stay on track with their fitness goals.
+* **Exercise library** : The website includes a library of exercises with descriptions and videos to help users learn proper form and technique.
+* **Community** : Users can interact with other members of the fitness community through a social media-style feed where they can share updates, photos, and comments.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Technologies Used
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+* **React** : A popular front-end Javascript library used for building user interfaces.
+* **Next.js** : A React framework used for building server-side rendered and statically generated web applications.
+* **Supabase** : A cloud-based service used for user authentication and authorization.
+* **Firestore** : A NoSQL database used for storing user-generated content.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Installation
 
-## Learn More
+To install and run FITNESS-WIN locally, follow these steps:
 
-To learn more about Next.js, take a look at the following resources:
+1. Clone the repository to your local machine.
+2. Install dependencies by running `npm install`.
+3. Run the development server by running `npm run dev`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contributing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+If you would like to contribute to FITNESS-WIN, please fork the repository and submit a pull request. We welcome contributions to help improve and expand the website's features.
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+FITNESS-WIN is licensed under the MIT License. See the `LICENSE` file for more information.

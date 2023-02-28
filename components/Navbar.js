@@ -163,7 +163,22 @@ export default function Example() {
                       <Menu.Item>
                         {({ active }) => (
                         <a
-                          href="/login"
+                          href="signup"
+                          className={classNames(active ? 'bg-gray-100' : '', 'block px-2 py-2')}
+                        >
+                          Créer un compte
+                          <Image
+                            src="/login.svg"
+                            alt='connexion'
+                            width={20}
+                            height={20} />
+                        </a>
+                        )}
+                      </Menu.Item>
+                      <Menu.Item>
+                        {({ active }) => (
+                        <a
+                          href="signin"
                           className={classNames(active ? 'bg-gray-100' : '', 'block px-2 py-2')}
                         >
                           Connexion

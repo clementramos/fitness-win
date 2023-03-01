@@ -159,60 +159,14 @@ export default function Example() {
                     leaveFrom="transform opacity-100 scale-100"
                     leaveTo="transform opacity-0 scale-95"
                   >
-                    <Menu.Items className="absolute right-0 z-10 mt-2 w-fit origin-top-right m-auto left-0 rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-                      <Menu.Item>
-                        {({ active }) => (
-                        <a
-                          href="signup"
-                          className={classNames(active ? 'bg-gray-100' : '', 'block px-2 py-2')}
-                        >
-                          Créer un compte
-                          <Image
-                            src="/login.svg"
-                            alt='connexion'
-                            width={20}
-                            height={20} />
-                        </a>
-                        )}
-                      </Menu.Item>
-                      <Menu.Item>
-                        {({ active }) => (
-                        <a
-                          href="signin"
-                          className={classNames(active ? 'bg-gray-100' : '', 'block px-2 py-2')}
-                        >
-                          Connexion
-                          <Image
-                            src="/login.svg"
-                            alt='connexion'
-                            width={20}
-                            height={20} />
-                        </a>
-                        )}
-                      </Menu.Item>
+                    <Menu.Items className="absolute right-0 z-10 mt-2 w-32 origin-top-right m-auto left-0 rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                       <Menu.Item>
                         {({ active }) => (
                           <a
-                            href="/logout"
-                            className={classNames(active ? 'bg-gray-100' : '', 'block px-2 py-2')}
+                            href="/loginPage"
+                            className={classNames(active ? 'bg-gray-100' : '', 'flex px-2 py-2')}
                           >
-                            Déconnexion
-                            <Image 
-                            src="/logout.svg"
-                            alt='déconnexion'
-                            width={20}
-                            height={20}
-                            />
-                          </a>
-                        )}
-                      </Menu.Item>
-                      <Menu.Item>
-                        {({ active }) => (
-                          <a
-                            href="/account1"
-                            className={classNames(active ? 'bg-gray-100' : '', 'block px-2 py-2')}
-                          >
-                            Compte
+                            Espace personnel  
                             <Image 
                             src="/account1.svg"
                             alt='Compte'

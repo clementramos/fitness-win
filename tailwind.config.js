@@ -32,6 +32,7 @@ module.exports = {
       // => @media (max-width: 639px) { ... }
     },
     backgroundImage: {
+      'gradient' : "url(../public/gradient_img.png)",
       'herosm' : "url(../public/311471864_641559357444038_8460826434024976324_n.jpg)",
       'conceptsm' : "url(../public/1665925475580.jpg)",
       'concept' : "url(../public/311589413_641559444110696_8741248957289991299_n.jpg)",

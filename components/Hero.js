@@ -5,6 +5,8 @@ import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
+import Footer from "./Footer";
+import Navbar from "./Navbar";
 
 const variants = {
     out: {
@@ -43,6 +45,7 @@ export default function Hero() {
     initial="out"
     exit="out"
     />
+    <Navbar/>
     <div className="testFont items-start bg-hero1 sm:bg-herosm bg-cover overflow-hidden h-screen w-screen pt-56 sm:pt-56 xs:inline-block xs:bg-black sm:w-full sm:h-full sm:overflow-hidden">
         <div className="laptop: hidden h-full bg-no-repeat bg-hero md:text-center sm:w-full xs:p-5 z-9999">
         </div>
@@ -238,6 +241,7 @@ export default function Hero() {
         </button>
         </div>
     </div>
+    <Footer />
     </>
   );
 }

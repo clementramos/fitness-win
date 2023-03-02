@@ -1,6 +1,6 @@
 import { createContext, useEffect, useState, useContext } from "react";
 import { getAuth } from "firebase/auth";
-import { app } from "../firebaseConfig";
+import { app } from "./firebaseConfig";
 import  Hero  from "components/Hero";
 
 const AuthContext = createContext({});

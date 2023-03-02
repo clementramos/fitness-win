@@ -3,7 +3,7 @@ import { supabase } from "./../utils/supabase";
 import Link from "next/link";
 import Navbar from "/components/Navbar";
 import Footer from "/components/Footer";
-import { useAuth } from "./Auth";
+import { useAuth } from "../Auth";
 import Image from "next/image";
 
 function Home({ cours }) {

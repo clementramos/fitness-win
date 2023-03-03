@@ -1,4 +1,4 @@
-import React from "react";
+import { React, createContext, useEffect, useState, useContext } from "react";
 import Link from "next/link";
 import Head from "next/head";
 import Navbar from "../components/Navbar";
@@ -6,8 +6,13 @@ import Footer from "../components/Footer";
 import Image from "next/image";
 import { signInWithPopup } from "firebase/auth";
 import { auth, provider, fbProvider } from "../firebaseConfig";
+import { useRouter } from "next/router";
+import { app } from "../firebaseConfig";
+import { getAuth } from "firebase/auth";
 
-export default function AccountPage() {
+const AuthContect = createContext({});
+
+export default function AccountPage({ children }) {
   const loginWithGoogle = () => {
     signInWithPopup(auth, provider);
   };
@@ -15,6 +20,29 @@ export default function AccountPage() {
   const loginWithFacebook = () => {
     signInWithPopup(auth, fbProvider);
   };
+
+  const [currentUser, setCurrentUser] = useState(null);
+  let router = useRouter()
+
+  useEffect(() => {
+    const auth = getAuth(app);
+    return auth.onIdTokenChanged(async (user) => {
+      if (!user) {
+        setCurrentUser(null);
+        return;
+      }
+      const token = await user.getIdToken();
+      setCurrentUser(user);
+    });
+  }, []);
+
+  useEffect(() => {
+    if (currentUser) {
+      router.push('/profilePage')
+    }
+  }, [currentUser]);
+ 
+
 
   return (
     <>

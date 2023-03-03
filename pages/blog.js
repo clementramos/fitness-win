@@ -21,6 +21,14 @@ function Blog({ blog }) {
           ))}
         </p>
       </div>
+      <div className="text-center pt-10 pb-10">
+            <button
+              type="button"
+              className="rounded-sm text-xl border-2 border-black bg-white px-8 py-2 font-bold text-black hover:bg-black hover:text-white focus:bg-black focus:text-white"
+            >
+              <a href="profilePage">Retour au profil</a>
+            </button>
+          </div>
       <Footer />
     </>
   );

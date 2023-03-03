@@ -3,11 +3,11 @@ import { Disclosure, Menu, Transition } from '@headlessui/react'
 import Image from 'next/image'
 
 const navigation = [
-  { name: 'Cours', href: '/cours', current: false },
+  { name: 'Cours', href: '/coursPersonnalise', current: false },
   { name: 'Coaching', href: '/coaching', current: false },
   { name: 'Formation', href: '/formation', current: false },
   { name: 'D\'Jo Edwards', href: '/biographie', current: false },
-  { name: 'Blog', href: '/blog', current: false},
+  {/*{ name: 'Blog', href: '/blog', current: false},*/}
 ]
 
 function classNames(...classes) {

@@ -1,20 +1,23 @@
 import { createContext, useEffect, useState, useContext } from "react";
 import { getAuth } from "firebase/auth";
 import { app } from "./firebaseConfig";
-import  Hero  from "components/Hero";
+import Hero from "components/Hero";
+import { useRouter } from "next/router";
 
 const AuthContext = createContext({});
 
 export const AuthProvider = ({ children }) => {
-    const [currentUser, setCurrentUser] = useState(null)
-    const [loading, setLoading] = useState(true)
+  const [currentUser, setCurrentUser] = useState(null);
+  const [loading, setLoading] = useState(true);
+  let router = useRouter()
+  
   useEffect(() => {
     const auth = getAuth(app);
     return auth.onIdTokenChanged(async (user) => {
       if (!user) {
         console.error("no user");
         setCurrentUser(null);
-        setLoading(false)
+        setLoading(false);
         return;
       }
       const token = await user.getIdToken();
@@ -25,15 +28,31 @@ export const AuthProvider = ({ children }) => {
     });
   }, []);
 
+  useEffect(() => {
+    if (currentUser) {
+      router.push('')
+    }
+  }, [currentUser]);
+
+  if (!loading) {
+    return (
+      <AuthContext.Provider value={{ currentUser }}>
+        {children}
+      </AuthContext.Provider>
+    );
+  }
+  return <div>Loading......</div>
+};
+{/*
   if (!currentUser) {
-    return <Hero/>
+    return <Hero />;
   } else {
     return (
-        <AuthContext.Provider value={{ currentUser }}>
-            {children}
-        </AuthContext.Provider>
-    )
+      <AuthContext.Provider value={{ currentUser }}>
+        {children}
+      </AuthContext.Provider>
+    );
   }
-};
+};*/}
 
 export const useAuth = () => useContext(AuthContext);

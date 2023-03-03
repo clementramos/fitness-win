@@ -10,7 +10,7 @@ import { useRouter } from "next/router";
 import { app } from "../firebaseConfig";
 import { getAuth } from "firebase/auth";
 
-const AuthContect = createContext({});
+const AuthContext = createContext({});
 
 export default function AccountPage({ children }) {
   const loginWithGoogle = () => {
@@ -149,3 +149,5 @@ export default function AccountPage({ children }) {
     </>
   );
 }
+
+export const useAuth = () => useContext(AuthContext)

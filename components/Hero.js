@@ -50,7 +50,7 @@ export default function Hero() {
         <div className="laptop: hidden h-full bg-no-repeat bg-hero md:text-center sm:w-full xs:p-5 z-9999">
         </div>
             <div className="text-center sm:w-full sm:p-5 h-screen">
-              <p className="text-white text-center text-[12rem] sm:text-5xl sm:w-full sm:pb-5 sm:text-center font-['Coalition'] tracking-wider">FITNESS WIN</p>
+              <p className="text-white text-center text-[12rem] sm:text-5xl sm:w-full sm:pb-5 sm:text-center //font-['Coalition'] tracking-wider">FITNESS WIN</p>
               <p className="text-white text-center text-4xl sm:text-3xl font-light pb-4">FAISONS DU SPORT ENSEMBLE</p>
               <button class="bg-transparent hover:bg-white text-white font-semibold hover:text-black py-2 px-4 border border-white hover:border-transparent rounded-none">
                 <a href="/contact">COMMENCEZ L'ESSAI DE 7 JOURS</a>

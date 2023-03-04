@@ -53,9 +53,9 @@ export default function AccountPage({ children }) {
 
   useEffect(() => {
     if (currentUser) {
-      router.push("/profilePage");
+      
     } else {
-      router.push("/loginPage");
+     
     }
   }, [currentUser]);
 
@@ -76,15 +76,15 @@ export default function AccountPage({ children }) {
           />
           <div className="bg-white shadow-2xl rounded w-1/4 sm:m-6 p-10">
             <p className="text-3xl text-left font-black sm:text-center sm:text-2xl w-fit">
-              Connexion à votre compte
+              Création de votre compte
             </p>
             <p className="pb-4 text-lg text-left font-thin sm:pb-10 sm:text-center sm:text-xl w-fit">
-              Pas de compte ?{" "}
+              Déjà membre ?{" "}
               <a
-                href="signInPage"
+                href="loginPage"
                 className="underline decoration-orange-400 hover:text-orange-400 font-medium"
               >
-                Créer-en un ici.
+                Connectez-vous ici.
               </a>
             </p>
             {/*<div className="flex flex-col items-center justify-center place-content-center w-center">*/}

@@ -45,7 +45,7 @@ const ProfilePage = (cours) => {
             alt="photo de profil"
             width={200}
             height={200}
-            className="py-3 mx-auto rounded-lg"
+            className="py-3 mx-auto rounded-full"
           />
           <div className="flex flex-row justify-between mx-auto">
             <div className="flex flex-row mx-auto space-x-4">

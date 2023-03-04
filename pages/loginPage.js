@@ -74,7 +74,7 @@ export default function AccountPage({ children }) {
             className="mx-auto sm:px-5"
             loading="lazy"
           />
-          <div className="bg-white shadow-2xl rounded w-1/4 sm:m-6 p-10">
+          <div className="bg-white shadow-2xl rounded w-1/4 sm:w-full sm:m-6 p-10">
             <p className="text-3xl text-left font-black sm:text-center sm:text-2xl w-fit">
               Connexion à votre compte
             </p>
@@ -143,8 +143,8 @@ export default function AccountPage({ children }) {
                 />
               </label>
               <div id="divLoginError" class="group">
-                <div id="lblLoginErrorMessage" class="errorlabel">
-                  (Message d'erreur)
+                <div id="forgotPassword" class="errorlabel">
+                  <a href="passwordReset" className="underline decoration-orange-400 hover:text-orange-400 font-medium">Mot de passe oublié ?</a>
                 </div>
               </div>
               <div className="pt-8"></div>

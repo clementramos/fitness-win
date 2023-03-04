@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { React, createContext, useEffect, useState, useContext } from "react";
 import Head from "next/head";
 import Navbar from "../components/Navbar";
@@ -16,7 +16,6 @@ const AuthContext = createContext({});
 export default function AccountPage({ children }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
 
   const handleForm = async (event) => {
     event.preventDefault();
@@ -53,12 +52,9 @@ export default function AccountPage({ children }) {
 
   useEffect(() => {
     if (currentUser) {
-      
     } else {
-     
     }
   }, [currentUser]);
-
 
   return (
     <>
@@ -74,7 +70,7 @@ export default function AccountPage({ children }) {
             className="mx-auto sm:px-5"
             loading="lazy"
           />
-          <div className="bg-white shadow-2xl rounded w-1/4 sm:m-6 p-10">
+          <div className="bg-white shadow-2xl rounded w-1/4 sm:w-full sm:m-6 p-10">
             <p className="text-3xl text-left font-black sm:text-center sm:text-2xl w-fit">
               Création de votre compte
             </p>
@@ -92,7 +88,7 @@ export default function AccountPage({ children }) {
             <button
               aria-label="Continue with google"
               role="button"
-              class="focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-gray-700 py-3.5 px-4 border rounded-lg border-gray-700 flex items-center w-full"
+              class="focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-gray-700 py-3.5 px-4 border rounded-lg border-gray-700 flex items-center w-full sm:w-full"
               onClick={loginWithGoogle}
             >
               <img
@@ -100,10 +96,10 @@ export default function AccountPage({ children }) {
                 alt="google"
               />
               <p class="text-base font-medium ml-4 text-gray-700">
-                Connexion avec Google
+                Créer votre compte avec Google
               </p>
             </button>
-            <div class="w-96 flex items-center justify-between py-5 z-50">
+            <div class="sm:w-96 w-full flex items-center justify-between py-5 z-50">
               <hr class="w-full bg-black h-0.5" />
               <p class="text-base font-medium leading-4 px-2.5 text-black">
                 OU
@@ -111,7 +107,127 @@ export default function AccountPage({ children }) {
               <hr class="w-full bg-black h-0.5" />
             </div>
 
-            <form className="column lg:py-16 max-w-5xl" onSubmit={handleForm}>
+            <form className="lg:py-16 w-full" onSubmit={handleForm}>
+              <label
+                htmlFor="email"
+                className="text-left block text-base font-medium text-black"
+              >
+                <p className="pb-2">Prénom :</p>
+                <input
+                  className="focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-gray-700 py-3.5 px-4 border rounded-lg border-gray-700 flex items-center w-full"
+                  required
+                  type="email"
+                  name="email"
+                  id="txtEmail"
+                  placeholder="Mohamed"
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+              </label>
+              <label
+                htmlFor="email"
+                className="text-left block text-base font-medium text-black"
+              >
+                <p className="pb-2 pt-5">Nom :</p>
+                <input
+                  className="focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-gray-700 py-3.5 px-4 border rounded-lg border-gray-700 flex items-center w-full"
+                  required
+                  type="email"
+                  name="email"
+                  id="txtEmail"
+                  placeholder="Ali"
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+              </label>
+              <label
+                htmlFor="email"
+                className="text-left block text-base font-medium text-black"
+              >
+                <p className="pb-2 pt-5">Sexe :</p>
+                <input
+                  className="text-black"
+                  value="homme"
+                  required
+                  type="radio"
+                  name="email"
+                  id="txtEmail"
+                  placeholder="example@mail.com"
+                  onChange={(e) => setEmail(e.target.value)}
+                /> Homme <br></br>
+                <input
+                  className="text-black"
+                  value="femme"
+                  required
+                  type="radio"
+                  name="email"
+                  id="txtEmail"
+                  placeholder="example@mail.com"
+                  onChange={(e) => setEmail(e.target.value)}
+                /> Femme <br></br>
+                <input
+                  className="text-black"
+                  value="autre"
+                  required
+                  type="radio"
+                  name="email"
+                  id="txtEmail"
+                  placeholder="example@mail.com"
+                  onChange={(e) => setEmail(e.target.value)}
+                /> Autre
+              </label>
+              <label
+                htmlFor="email"
+                className="text-left block text-base font-medium text-black"
+              >
+                <p className="pb-2 pt-5">Date de naissance :</p>
+                <input
+                  className="focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-gray-700 py-3.5 px-4 border rounded-lg border-gray-700 flex items-center w-full"
+                  required
+                  type="date"
+                  name="email"
+                  id="txtEmail"
+                  placeholder=""
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+              </label>
+              <label
+                htmlFor="email"
+                className="text-left block text-base font-medium text-black"
+              >
+                <p className="pb-2 pt-5">Numéro de téléphone :</p>
+                <input
+                  className="focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-gray-700 py-3.5 px-4 border rounded-lg border-gray-700 flex items-center w-full"
+                  required
+                  type="tel"
+                  name="email"
+                  id="txtEmail"
+                  placeholder="06 07 08 09 10"
+                  minLength="10"
+                  maxLength="10"
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+              </label>
+              <label
+                htmlFor="email"
+                className="text-left block text-base font-medium text-black"
+              >
+                <p className="pb-2 pt-5">Photo :</p>
+                <input
+                  className="focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-gray-700 py-3.5 px-4 border rounded-lg border-gray-700 flex items-center w-full"
+                  required
+                  type="file"
+                  name="email"
+                  id="txtEmail"
+                  placeholder="example@mail.com"
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+              </label>
+              <div class="sm:w-96 w-full flex items-center justify-between py-5 z-50">
+                <hr class="w-full bg-black h-0.5" />
+                <p class="text-base font-medium leading-4 px-2.5 text-black">
+                  Sécurité
+                </p>
+                <hr class="w-full bg-black h-0.5" />
+              </div>
               <label
                 htmlFor="email"
                 className="text-left block text-base font-medium text-black"
@@ -123,7 +239,7 @@ export default function AccountPage({ children }) {
                   type="email"
                   name="email"
                   id="txtEmail"
-                  placeholder="example@mail.com"
+                  placeholder="mohamedali@mail.com"
                   onChange={(e) => setEmail(e.target.value)}
                 />
               </label>
@@ -131,29 +247,39 @@ export default function AccountPage({ children }) {
                 htmlFor="password"
                 className="pt-2 text-left block mb-2 text-base font-medium text-black"
               >
-                <p className="pb-1">Mot de passe :</p>
+                <p className="pb-1 pt-5">Mot de passe :</p>
                 <input
                   className="focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-gray-700 py-3.5 px-4 border rounded-lg border-gray-700 flex items-center w-full"
                   required
                   type="password"
                   name="password"
                   id="txtPassword"
-                  placeholder="password"
+                  placeholder="Mot de passe"
                   onChange={(e) => setPassword(e.target.value)}
                 />
               </label>
-              <div id="divLoginError" class="group">
-                <div id="lblLoginErrorMessage" class="errorlabel">
-                  (Message d'erreur)
-                </div>
-              </div>
+              <label
+                htmlFor="password"
+                className="pt-2 text-left block mb-2 text-base font-medium text-black"
+              >
+                <p className="pb-1 pt-5">Confirmez le mot de passe :</p>
+                <input
+                  className="focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-gray-700 py-3.5 px-4 border rounded-lg border-gray-700 flex items-center w-full"
+                  required
+                  type="password"
+                  name="password"
+                  id="txtPassword"
+                  placeholder="Mot de passe"
+                  onChange={(e) => setPassword(e.target.value)}
+                />
+              </label>
               <div className="pt-8"></div>
               <button
                 className="button-inverse w-full uppercase py-3 px-5 text-xl font-medium text-center text-white rounded-lg bg-green-500  hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 bg-primary-600 hover:bg-primary-700 focus:ring-primary-800"
                 type="submit"
                 id="btnLogin"
               >
-                Connexion
+                Créer votre compte
               </button>
             </form>
 
@@ -170,7 +296,7 @@ export default function AccountPage({ children }) {
               </button>
   </a>*/}
             <p className="pt-8 pb-4 text-xl text-center font-thin italic sm:px-5 sm:text-center sm:text-sm w-fit">
-              En continuant, vous indiquez acceptez notre{" "}
+              En créant votre compte, vous indiquez acceptez notre{" "}
               <a
                 href="javascript:void(0)"
                 class="underline decoration-orange-400 hover:text-orange-400"

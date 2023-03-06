@@ -118,12 +118,12 @@ export default function AccountPage({ children }) {
               >
                 <p className="pb-2">E-mail :</p>
                 <input
-                  className="focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-gray-700 py-3.5 px-4 border rounded-lg border-gray-700 flex items-center w-full"
+                  className="focus:outline-none focus:ring focus:border-none focus:ring-orange-400 py-3.5 px-4 border rounded-lg border-gray-700 flex items-center w-full"
                   required
                   type="email"
                   name="email"
                   id="txtEmail"
-                  placeholder="example@mail.com"
+                  placeholder="mohamedali@mail.com"
                   onChange={(e) => setEmail(e.target.value)}
                 />
               </label>
@@ -133,12 +133,12 @@ export default function AccountPage({ children }) {
               >
                 <p className="pb-1">Mot de passe :</p>
                 <input
-                  className="focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-gray-700 py-3.5 px-4 border rounded-lg border-gray-700 flex items-center w-full"
+                  className="focus:outline-none focus:ring focus:border-none focus:ring-orange-400 py-3.5 px-4 border rounded-lg border-gray-700 flex items-center w-full"
                   required
                   type="password"
                   name="password"
                   id="txtPassword"
-                  placeholder="password"
+                  placeholder="Mot de passe"
                   onChange={(e) => setPassword(e.target.value)}
                 />
               </label>
@@ -149,7 +149,7 @@ export default function AccountPage({ children }) {
               </div>
               <div className="pt-8"></div>
               <button
-                className="button-inverse w-full uppercase py-3 px-5 text-xl font-medium text-center text-white rounded-lg bg-green-500  hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 bg-primary-600 hover:bg-primary-700 focus:ring-primary-800"
+                className="button-inverse w-full uppercase py-3 px-5 text-xl font-medium text-center text-white rounded-lg bg-orange-400  hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 bg-primary-600 hover:bg-primary-700 focus:ring-primary-800"
                 type="submit"
                 id="btnLogin"
               >

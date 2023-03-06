@@ -88,7 +88,7 @@ export default function AccountPage({ children }) {
             <button
               aria-label="Continue with google"
               role="button"
-              class="focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-gray-700 py-3.5 px-4 border rounded-lg border-gray-700 flex items-center w-full sm:w-full"
+              class="focus:outline-none focus:ring focus:border-none focus:ring-orange-400 py-3.5 px-4 border rounded-lg border-gray-700 flex items-center w-full sm:w-full"
               onClick={loginWithGoogle}
             >
               <img
@@ -114,7 +114,7 @@ export default function AccountPage({ children }) {
               >
                 <p className="pb-2">Prénom :</p>
                 <input
-                  className="focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-gray-700 py-3.5 px-4 border rounded-lg border-gray-700 flex items-center w-full"
+                  className="focus:outline-none focus:ring focus:border-none focus:ring-orange-400 py-3.5 px-4 border rounded-lg border-gray-700 flex items-center w-full"
                   required
                   type="email"
                   name="email"
@@ -129,7 +129,7 @@ export default function AccountPage({ children }) {
               >
                 <p className="pb-2 pt-5">Nom :</p>
                 <input
-                  className="focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-gray-700 py-3.5 px-4 border rounded-lg border-gray-700 flex items-center w-full"
+                  className="focus:outline-none focus:ring focus:border-none focus:ring-orange-400 py-3.5 px-4 border rounded-lg border-gray-700 flex items-center w-full"
                   required
                   type="email"
                   name="email"
@@ -144,7 +144,7 @@ export default function AccountPage({ children }) {
               >
                 <p className="pb-2 pt-5">Sexe :</p>
                 <input
-                  className="text-black"
+                  className="text-orange-400 focus:border-none focus:ring focus:border-none focus:ring-orange-400"
                   value="homme"
                   required
                   type="radio"
@@ -154,7 +154,7 @@ export default function AccountPage({ children }) {
                   onChange={(e) => setEmail(e.target.value)}
                 /> Homme <br></br>
                 <input
-                  className="text-black"
+                  className="text-orange-400 focus:border-none focus:ring focus:border-none focus:ring-orange-400"
                   value="femme"
                   required
                   type="radio"
@@ -164,7 +164,7 @@ export default function AccountPage({ children }) {
                   onChange={(e) => setEmail(e.target.value)}
                 /> Femme <br></br>
                 <input
-                  className="text-black"
+                  className="text-orange-400 focus:border-none focus:ring focus:border-none focus:ring-orange-400"
                   value="autre"
                   required
                   type="radio"
@@ -180,7 +180,7 @@ export default function AccountPage({ children }) {
               >
                 <p className="pb-2 pt-5">Date de naissance :</p>
                 <input
-                  className="focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-gray-700 py-3.5 px-4 border rounded-lg border-gray-700 flex items-center w-full"
+                  className="focus:outline-none focus:ring focus:border-none focus:ring-orange-400 py-3.5 px-4 border rounded-lg border-gray-700 flex items-center w-full"
                   required
                   type="date"
                   name="email"
@@ -195,7 +195,7 @@ export default function AccountPage({ children }) {
               >
                 <p className="pb-2 pt-5">Numéro de téléphone :</p>
                 <input
-                  className="focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-gray-700 py-3.5 px-4 border rounded-lg border-gray-700 flex items-center w-full"
+                  className="focus:outline-none focus:ring focus:border-none focus:ring-orange-400 py-3.5 px-4 border rounded-lg border-gray-700 flex items-center w-full"
                   required
                   type="tel"
                   name="email"
@@ -212,7 +212,7 @@ export default function AccountPage({ children }) {
               >
                 <p className="pb-2 pt-5">Photo :</p>
                 <input
-                  className="focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-gray-700 py-3.5 px-4 border rounded-lg border-gray-700 flex items-center w-full"
+                  className="focus:outline-none focus:ring focus:border-none focus:ring-orange-400 py-3.5 px-4 border rounded-lg border-gray-700 flex items-center w-full"
                   required
                   type="file"
                   name="email"
@@ -234,7 +234,7 @@ export default function AccountPage({ children }) {
               >
                 <p className="pb-2">E-mail :</p>
                 <input
-                  className="focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-gray-700 py-3.5 px-4 border rounded-lg border-gray-700 flex items-center w-full"
+                  className="focus:outline-none focus:ring focus:border-none focus:ring-orange-400 py-3.5 px-4 border rounded-lg border-gray-700 flex items-center w-full"
                   required
                   type="email"
                   name="email"
@@ -249,7 +249,7 @@ export default function AccountPage({ children }) {
               >
                 <p className="pb-1 pt-5">Mot de passe :</p>
                 <input
-                  className="focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-gray-700 py-3.5 px-4 border rounded-lg border-gray-700 flex items-center w-full"
+                  className="focus:outline-none focus:ring focus:border-none focus:ring-orange-400 py-3.5 px-4 border rounded-lg border-gray-700 flex items-center w-full"
                   required
                   type="password"
                   name="password"
@@ -264,7 +264,7 @@ export default function AccountPage({ children }) {
               >
                 <p className="pb-1 pt-5">Confirmez le mot de passe :</p>
                 <input
-                  className="focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-gray-700 py-3.5 px-4 border rounded-lg border-gray-700 flex items-center w-full"
+                  className="focus:outline-none focus:ring focus:border-none focus:ring-orange-400 py-3.5 px-4 border rounded-lg border-gray-700 flex items-center w-full"
                   required
                   type="password"
                   name="password"
@@ -275,7 +275,7 @@ export default function AccountPage({ children }) {
               </label>
               <div className="pt-8"></div>
               <button
-                className="button-inverse w-full uppercase py-3 px-5 text-xl font-medium text-center text-white rounded-lg bg-green-500  hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 bg-primary-600 hover:bg-primary-700 focus:ring-primary-800"
+                className="button-inverse w-full uppercase py-3 px-5 text-xl font-medium text-center text-white rounded-lg bg-orange-400 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 bg-primary-600 hover:bg-primary-700 focus:ring-primary-800"
                 type="submit"
                 id="btnLogin"
               >
@@ -287,7 +287,7 @@ export default function AccountPage({ children }) {
               <button
                 aria-label="Continue with twitter"
                 role="button"
-                class="focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-gray-700 py-3.5 px-4 border rounded-lg border-gray-700 flex items-center w-full mt-4"
+                class="focus:outline-none focus:ring focus:border-none focus:ring-orange-400 py-3.5 px-4 border rounded-lg border-gray-700 flex items-center w-full mt-4"
               >
                 <img src="/email.png" alt="mail" />
                 <p class="text-base font-medium ml-4 text-gray-700">

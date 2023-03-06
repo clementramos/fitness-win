@@ -23,7 +23,7 @@ const adminPage = (cours) => {
   const router = useRouter();
 
   if (!currentUser) {
-    router.push("/loginPage");
+    router.push("/#");
   }
 
   return (

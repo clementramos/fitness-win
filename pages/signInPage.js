@@ -70,7 +70,7 @@ export default function AccountPage({ children }) {
             className="mx-auto sm:px-5"
             loading="lazy"
           />
-          <div className="bg-white shadow-2xl rounded w-1/4 sm:w-full sm:m-6 p-10">
+          <div className="bg-white shadow-2xl rounded w-2/5 sm:w-full sm:m-6 p-10">
             <p className="text-3xl text-left font-black sm:text-center sm:text-2xl w-fit">
               Création de votre compte
             </p>

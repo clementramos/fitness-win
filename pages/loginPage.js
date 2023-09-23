@@ -74,7 +74,7 @@ export default function AccountPage({ children }) {
             className="mx-auto sm:px-5"
             loading="lazy"
           />
-          <div className="bg-white shadow-2xl rounded w-1/4 sm:w-full sm:m-6 p-10">
+          <div className="bg-white shadow-2xl rounded w-2/5 sm:w-full sm:m-6 p-10">
             <p className="text-3xl text-left font-black sm:text-center sm:text-2xl w-fit">
               Connexion à votre compte
             </p>
@@ -103,7 +103,7 @@ export default function AccountPage({ children }) {
                 Connexion avec Google
               </p>
             </button>
-            <div class="w-96 flex items-center justify-between py-5 z-50">
+            <div class="w-full flex items-center justify-between py-5 z-50">
               <hr class="w-full bg-black h-0.5" />
               <p class="text-base font-medium leading-4 px-2.5 text-black">
                 OU

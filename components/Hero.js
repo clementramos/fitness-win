@@ -74,14 +74,14 @@ export default function Hero() {
         <p className="pt-8 text-xl font-bold px-80 sm:px-5 sm:text-justify">NOUVEAU - Programmes disponibles sous forme de vidéos</p>
         <p className="pt-8 pb-8 text-md font-thin px-80 sm:px-5 sm:text-justify">Des cours de sport en vidéo sont désormais disponibles pour les amateurs de fitness et les sportifs en herbe. Pour y accéder, il suffit de souscrire à un abonnement spécial. Ce dernier offre un accès illimité à une variété de cours en ligne, conçus pour s'adapter à tous les niveaux et à toutes les disciplines sportives. Les vidéos sont enseignées par un professionnel du fitness expérimenté, garantissant une qualité de formation optimale. Profitez de cette opportunité pour améliorer votre condition physique et atteindre vos objectifs sportifs en vous entraînant à la maison ou où que vous soyez.</p>
         <div className="text-center bg-white bg-cover overflow-hidden h-full w-screen pb-12 xs:inline-block xs:bg-black sm:w-full sm:h-full sm:overflow-hidden">
-        <button class="bg-black hover:bg-white hover:border-2 hover:border-black text-white font-semibold hover:text-black py-2 px-4 border border-white hover:border-transparent rounded-none">
+        <button class="bg-black hover:bg-white hover:border-2 hover:border-current text-white font-semibold hover:text-black py-2 px-4 border border-white hover:border-transparent rounded-none">
                 <a href="/contact">EN SAVOIR PLUS</a>
         </button>
         </div>
     </div>
     <hr class="my-6 border-orange-400 sm:mx-auto dark:border-gray-700 lg:my-8"/>
     <p className="text-black text-center text-[12rem] sm:text-5xl sm:w-full sm:pb-5 pb-10 sm:text-center font-['Coalition'] tracking-wider">Le concept</p>
-    <div className="grid grid-cols-2 sm:grid sm:grid-cols-1 bg-concept sm:bg-conceptsm bg-cover h-screen sm:h-full w-screen pt-12 pb-12">
+    <div className="grid grid-cols-2 gap-8 sm:grid sm:grid-cols-1 bg-concept sm:bg-conceptsm bg-cover h-full sm:h-full w-screen pt-12 pb-12">
       <Link href="/contact">
     <Image 
         src="/niveaux.png"
@@ -131,7 +131,7 @@ export default function Hero() {
           <p className="laptop:hidden text-black text-3xl pt-5 font-semibold text-center leading-relaxed sm:text-left sm:pl-5 sm:w-full">PREMIERS PAS <br></br> DEBUTANT<br></br> INTERMEDIAIRE <br></br> CONFIRME <br></br> EXPERT</p>
           <p className="sm:hidden text-black text-justify text-xl font-light text-left pt-5 pl-5 pb-5 leading-relaxed sm:w-full">Les cours de sport sont conçus pour s'adapter à tous les niveaux, que vous soyez un débutant ou un expert.<br></br> Si vous êtes un débutant, le niveau <strong className="font-bold">"Premiers Pas"</strong> est fait pour vous, avec des cours conçus pour vous familiariser avec les bases du sport que vous avez choisi.<br></br> Si vous avez déjà quelques compétences, le niveau <strong className="font-bold">"Débutant"</strong> est là pour vous aider à les développer.<br></br> Pour ceux qui ont déjà une expérience pratique, le niveau <strong className="font-bold">"Intermédiaire"</strong> offre des cours plus avancés pour vous aider à améliorer vos compétences.<br></br> Les sportifs confirmés peuvent rejoindre le niveau <strong className="font-bold">"Confirmé"</strong>, qui propose des cours pour les aider à atteindre leur plein potentiel.<br></br> Les athlètes les plus expérimentés peuvent se joindre au niveau <strong className="font-bold">"Expert"</strong>, où ils peuvent développer leurs compétences à un niveau encore plus élevé. Tous les niveaux sont conçus pour être accessibles et stimulants, vous aidant à atteindre vos objectifs de sport de la manière la plus efficace possible.</p>
           <div className="pl-5">
-          <button class="bg-black hover:bg-white hover:border-2 hover:border-black text-white font-semibold hover:text-black py-2 px-4 border border-white hover:border-transparent rounded-none">
+          <button class="bg-black hover:bg-white hover:border-2 hover:border-current text-white font-semibold hover:text-black py-2 px-4 border border-white hover:border-transparent rounded-none">
                 <a href="/contact">COMMENCEZ DES AUJOURD'HUI</a>
         </button>
         </div>
@@ -149,7 +149,7 @@ export default function Hero() {
         <p className="pt-8 text-xl font-bold px-80 sm:px-5 sm:text-justify uppercase">REJOIGNEZ LA COMMUNAUTé</p>
         <p className="pt-8 pb-8 text-md font-thin px-80 sm:px-5 sm:text-justify">Il est temps de rejoindre une communauté de sportifs déterminés à atteindre leurs objectifs fitness. Avec un coach diplômé et expérimenté, vous bénéficierez d'un encadrement personnalisé pour atteindre vos objectifs. Que vous cherchiez à améliorer votre condition physique, à perdre du poids ou à vous préparer pour une compétition, je vous aiderai à mettre en place un plan d'entraînement sur mesure pour atteindre vos objectifs de manière efficace. Rejoindre notre communauté de sportifs, c'est également bénéficier de l'énergie et de l'entraide de personnes qui partagent les mêmes passions et les mêmes objectifs que vous. N'attendez plus pour vous lancer et atteindre vos objectifs sportifs.</p>
         <div className="text-left px-80 bg-white bg-cover overflow-hidden h-full w-screen pb-24 sm:pb-8 xs:inline-block xs:bg-black sm:w-full sm:pl-5 sm:h-full sm:w-screen sm:text-center ">
-        <button class="bg-black hover:bg-white hover:border-2 hover:border-black text-white font-semibold hover:text-black py-2 px-4 border border-white hover:border-transparent rounded-none">
+        <button class="bg-black hover:bg-white hover:border-2 hover:border-current text-white font-semibold hover:text-black py-2 px-4 border border-white hover:border-transparent rounded-none">
                 <a href="/contact">COMMENCEZ VOTRE ESSAI GRATUIT</a>
         </button>
         </div>
@@ -163,7 +163,7 @@ export default function Hero() {
         className="mx-auto sm:px-5 pb-12"
         />
         <div className="text-center px-80 bg-white bg-cover overflow-hidden h-full w-screen pb-12 xs:inline-block xs:bg-black sm:w-full sm:pl-5 sm:pb-8 sm:text-center sm:h-full sm:overflow-hidden">
-        <button class="bg-black hover:bg-white hover:border-2 hover:border-black text-white font-semibold hover:text-black py-2 px-4 border border-white hover:border-transparent rounded-none">
+        <button class="bg-black hover:bg-white hover:border-2 hover:border-current text-white font-semibold hover:text-black py-2 px-4 border border-white hover:border-transparent rounded-none">
                 <a href="/contact" className="uppercase">Découvrir les cours</a>
         </button>
         </div>
@@ -236,7 +236,7 @@ export default function Hero() {
         />
         </div>
         <div className="pb-24 pt-12">
-        <button class="bg-black hover:bg-white hover:border-2 hover:border-black text-white font-semibold hover:text-black py-2 px-4 border border-white hover:border-transparent rounded-none">
+        <button class="bg-black hover:bg-white hover:border-2 hover:border-current text-white font-semibold hover:text-black py-2 px-4 border border-white hover:border-transparent rounded-none">
                 <a href="/contact" className="uppercase">N'attendez plus !</a>
         </button>
         </div>
